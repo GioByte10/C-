@@ -1,16 +1,11 @@
 #include <iostream>
 #include <string>
+#include <time.h>
 using namespace std;
 
 int main ()
 {
-  string str("264952102113200");
-
-  int n = stoi(str);
-
-  cout << str << " --> " << n << endl;
-
-
+  printf("%d", time(NULL));
 
   system("PAUSE");
   return 0;

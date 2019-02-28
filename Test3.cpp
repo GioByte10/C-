@@ -1,15 +1,25 @@
 #include <iostream>
 #include <string>
+#include <time.h>
+#include <windows.h>
 using namespace std;
 
 int main()
 {
+   int x, i = 0;
 
-   char TXT[52];
+   srand(time(NULL));
 
-   printf("!@#$%^&*()_+`~?><.,';:[]{}/-|=");
+   while (i != 60){
 
-   TXT[0] = 'A';
+    x = 1 + (rand() % 60);
+    printf("%d\n", x);
+
+    i++;
+
+    Sleep(1000);
+
+   }
 
    system("PAUSE");
    return 0;
