@@ -8,41 +8,40 @@ int main()
     y = 193;
     Sleep(200);
 
-    SetCursorPos(x, y);
-    mouse_event(MOUSEEVENTF_LEFTDOWN ,x, y, 0, 0);
-    mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, 0);
+    Sleep(1000);
 
-    Sleep(200);
+while(true){
 
+   if(GetAsyncKeyState(0x28) && GetAsyncKeyState(0x10) && GetAsyncKeyState(0x11)){
 
+            keybd_event(0x47,0, 0,0);
+            keybd_event(0x47,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x56,0, 0,0);
+            keybd_event(0x56,0,KEYEVENTF_KEYUP ,0);
+            /*keybd_event(0x41,0, 0,0);
+            keybd_event(0x41,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x4E,0, 0,0);
+            keybd_event(0x4E,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x4E,0, 0,0);
+            keybd_event(0x4E,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x43,0, 0,0);
+            keybd_event(0x49,0,KEYEVENTF_KEYUP ,0);
+            /*keybd_event(0x49,0, 0,0);
+            keybd_event(0x43,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x43,0, 0,0);
+            keybd_event(0x43,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x43,0, 0,0);
+            keybd_event(0x43,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x43,0, 0,0);
+            keybd_event(0x43,0,KEYEVENTF_KEYUP ,0);
+            Sleep(1000);*/
 
-
-    // SHIFT = 0x10
-    // U = 0x55
-
-    // ESPERAMOS A QUE LA TECLA SHIFT SEA PRESIONADA
-
-//while(true){
-        // AL PRESIONAR LA TECLA SHIFT = 0x10
-
-//if (GetAsyncKeyState(0x41)){
-
-
-            keybd_event(0x12,0,0,0);
-            //keybd_event(0x12,0,KEYEVENTF_KEYUP ,0);
-
-            keybd_event(0x42,0,0,0);
-           // keybd_event(0x12,0,KEYEVENTF_KEYUP ,0);
-
-            keybd_event(0x38,0,0,0);
-            //keybd_event(0x12,0,KEYEVENTF_KEYUP ,0);
-
-            keybd_event(0x45,0,0,0);
-            //keybd_event(0x12,0,KEYEVENTF_KEYUP ,0);
-
+   }
+}
 
             // INTERVALO
-            keybd_event(0x12,0,KEYEVENTF_KEYUP ,0);
+            keybd_event(0x43,0, 0,0);
+            keybd_event(0x43,0,KEYEVENTF_KEYUP ,0);
             Sleep(1000);
             //break;
 

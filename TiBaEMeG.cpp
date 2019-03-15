@@ -191,9 +191,9 @@ int main(){
 
   string password;
   COORD coord[2];
-  char TIME[16], ABC[92];
+  char TIME[16], ABC[92], aux[1];
   float IntercalatedF_;
-  int Intercalated_;
+  int Intercalated_, i, NNTIME[15], ;
   double NTIME;
 
   ABC[0] = 'A';
@@ -318,9 +318,12 @@ int main(){
 
     printf("\n\n");
 
-    for(int i = 0; i < 15; i++){
+    for(i = 0; i < 15; i++){
 
         TIME[i] = dat(ctime(&end_time), i);
+        aux[0] = dat(ctime(&end_time), i);
+        stringstream geek(aux);
+        geek >> NNTIME[i];
 
     }
 
@@ -329,7 +332,17 @@ int main(){
     stringstream geek(TIME);
     geek >> NTIME;
 
-    //for ()
+    for(i = 0; i < 15; i++){
+        printf("%d\n", NNTIME[i]);
+    }
+
+    for(i = 0; i < 15; i++){
+        NNTIME[i] ++;
+    }
+
+    for(i = 0; i < 15; i++){
+        printf("%d\n", NNTIME[i]);
+    }
 
 
 
