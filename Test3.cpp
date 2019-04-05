@@ -1,26 +1,22 @@
+#include <stdio.h>
 #include <iostream>
+#include <stdlib.h>
 #include <string>
-#include <time.h>
-#include <windows.h>
 using namespace std;
 
-int main()
-{
-   int x, i = 0;
+int main(){
 
-   srand(time(NULL));
+  char y[2];
+  y[0] = 'A';
+  y[1] = 'B';
 
-   while (i != 60){
+  string x(y);
 
-    x = 1 + (rand() % 60);
-    printf("%d\n", x);
 
-    i++;
+  cout << x;
 
-    Sleep(1000);
 
-   }
+  return 0;
+  system("PAUSE");
 
-   system("PAUSE");
-   return 0;
 }

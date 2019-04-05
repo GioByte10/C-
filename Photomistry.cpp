@@ -6,7 +6,8 @@
 #define TAM
 using namespace std;
 
-  char element[3];
+  char element[2];
+  char symbols[1][1];
 
   bool GetCAP(string x, int y){
 
@@ -70,6 +71,9 @@ using namespace std;
     element[0] = 'O';
     return true;
 
+  }else if (x[y] == '='){
+    symbols[0][0] = '=';
+    return false;
   }
 
   return false;
@@ -136,8 +140,8 @@ using namespace std;
 
 int main(){
 
-  string equation, equations[10];
-  bool cond;
+  string equation, equations[10], Sside[10];
+  bool cond, side = false;
   int i = 0, j = 0;
 
   printf("Welcome to the Photomistry Project Tester In C++ Computer\n");
@@ -151,15 +155,29 @@ int main(){
         element[0] = NULL;
         element[1] = NULL;
         cond = GetCAP(equation, i);
+        if(symbols[0][0] == '='){
+            side = true;
+        }
 
         if (cond){
             i++;
             GetLet(equation, i);
+            //cout << element;
             equations[j] = element;
+            //printf("WTF");
+            if(side){
+                Sside[j] = (element + "Right");
+
+            }else{
+                Sside[j] = (element + "Left");
+            }
             j++;
 
         }
   }
+
+   //printf("%d\n", equations[0].size());
+   //cout << equations[0];
 
   for (i = 0; 0 != equations[i].size(); i++){
     cout << equations[i] <<endl;
