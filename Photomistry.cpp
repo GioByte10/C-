@@ -1,13 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
-#include <string.h>
-#include <string>
-#define TAM
 using namespace std;
 
   char element[2];
-  char symbols[1][1];
 
   bool GetCAP(string x, int y){
 
@@ -71,9 +67,49 @@ using namespace std;
     element[0] = 'O';
     return true;
 
+  }else if (x[y] == 'P'){
+    element[0] = 'P';
+    return true;
+
+  }else if (x[y] == 'Q'){
+    element[0] = 'Q';
+    return true;
+
+  }else if (x[y] == 'R'){
+    element[0] = 'R';
+    return true;
+
+  }else if (x[y] == 'S'){
+    element[0] = 'S';
+    return true;
+
+  }else if (x[y] == 'T'){
+    element[0] = 'T';
+    return true;
+
+  }else if (x[y] == 'U'){
+    element[0] = 'U';
+    return true;
+
+  }else if (x[y] == 'V'){
+    element[0] = 'V';
+    return true;
+
+  }else if (x[y] == 'X'){
+    element[0] = 'X';
+    return true;
+
+  }else if (x[y] == 'Y'){
+    element[0] = 'Y';
+    return true;
+
+  }else if (x[y] == 'Z'){
+    element[0] = 'Z';
+    return true;
+
   }else if (x[y] == '='){
-    symbols[0][0] = '=';
-    return false;
+    element[0] = '=';
+    return true;
   }
 
   return false;
@@ -131,6 +167,36 @@ using namespace std;
   }else if (x[y] == 'p'){
     element[1] = 'p';
 
+  }else if (x[y] == 'q'){
+    element[1] = 'q';
+
+  }else if (x[y] == 'r'){
+    element[1] = 'r';
+
+  }else if (x[y] == 's'){
+    element[1] = 's';
+
+  }else if (x[y] == 't'){
+    element[1] = 't';
+
+  }else if (x[y] == 'u'){
+    element[1] = 'u';
+
+  }else if (x[y] == 'v'){
+    element[1] = 'v';
+
+  }else if (x[y] == 'x'){
+    element[1] = 'x';
+
+  }else if (x[y] == 'y'){
+    element[1] = 'y';
+
+  }else if (x[y] == 'z'){
+    element[1] = 'z';
+
+  }else if (x[y] == '='){
+    element[1] = '=';
+
   }
 
 
@@ -140,9 +206,9 @@ using namespace std;
 
 int main(){
 
-  string equation, equations[10], Sside[10];
+  string equation, elements[10][2], Sside[10];
   bool cond, side = false;
-  int i = 0, j = 0;
+  int i = 0, j = 0, k = 0;
 
   printf("Welcome to the Photomistry Project Tester In C++ Computer\n");
   printf("PPTCC\n");
@@ -152,35 +218,48 @@ int main(){
   //printf("%d", equation.size());
 
   for(i = 0; i < equation.size(); i++){
+
         element[0] = NULL;
         element[1] = NULL;
         cond = GetCAP(equation, i);
-        if(symbols[0][0] == '='){
-            side = true;
-        }
+
 
         if (cond){
+                if(element[0] == '='){
+                    k++;
+                    j = 0;
+
+                }else{
             i++;
             GetLet(equation, i);
-            //cout << element;
-            equations[j] = element;
-            //printf("WTF");
-            if(side){
-                Sside[j] = (element + "Right");
-
+            if(element[1] == '='){
+                element[1] = NULL;
+                elements[j][k] = element;
+                j = 0;
+                k++;
             }else{
-                Sside[j] = (element + "Left");
+            elements[j][k] = element;
+                j++;
+
             }
-            j++;
+
+                }
 
         }
   }
 
    //printf("%d\n", equations[0].size());
-   //cout << equations[0];
+   //cout << elements[0] << endl;
+printf("Left in the Equation:\n");
 
-  for (i = 0; 0 != equations[i].size(); i++){
-    cout << equations[i] <<endl;
+  for (i = 0; 0 != elements[i][0].size(); i++){
+    cout << elements[i][0] <<endl;
+  }
+  printf("\n");
+  printf("Right in the Equation:\n");
+
+  for (i = 0; 0 != elements[i][1].size(); i++){
+    cout << elements[i][1] <<endl;
   }
 
   system("PAUSE");

@@ -1,22 +1,253 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
-#include <stdlib.h>
-#include <string>
 using namespace std;
+
+  char element[100];
+
+
+  bool GetLet(string x, int y, int l){
+
+  if (x[y] == 'A'){
+    element[l] = 'A';
+    return true;
+
+  }else if (x[y] == 'B'){
+    element[l] = 'B';
+    return true;
+
+  }else if (x[y] == 'C'){
+    element[l] = 'C';
+    return true;
+
+  }else if (x[y] == 'D'){
+    element[l] = 'D';
+    return true;
+
+  }else if (x[y] == 'E'){
+    element[l] = 'E';
+    return true;
+
+  }else if (x[y] == 'F'){
+    element[l] = 'F';
+    return true;
+
+  }else if (x[y] == 'G'){
+    element[l] = 'G';
+    return true;
+
+  }else if (x[y] == 'H'){
+    element[l] = 'H';
+    return true;
+
+  }else if (x[y] == 'I'){
+    element[l] = 'I';
+    return true;
+
+  }else if (x[y] == 'J'){
+    element[l] = 'J';
+    return true;
+
+  }else if (x[y] == 'K'){
+    element[l] = 'K';
+    return true;
+
+  }else if (x[y] == 'L'){
+    element[l] = 'L';
+    return true;
+
+  }else if (x[y] == 'M'){
+    element[l] = 'M';
+    return true;
+
+  }else if (x[y] == 'N'){
+    element[l] = 'N';
+    return true;
+
+  }else if (x[y] == 'O'){
+    element[l] = 'O';
+    return true;
+
+  }else if (x[y] == 'P'){
+    element[l] = 'P';
+    return true;
+
+  }else if (x[y] == 'Q'){
+    element[l] = 'Q';
+    return true;
+
+  }else if (x[y] == 'R'){
+    element[l] = 'R';
+    return true;
+
+  }else if (x[y] == 'S'){
+    element[l] = 'S';
+    return true;
+
+  }else if (x[y] == 'T'){
+    element[l] = 'T';
+    return true;
+
+  }else if (x[y] == 'U'){
+    element[l] = 'U';
+    return true;
+
+  }else if (x[y] == 'V'){
+    element[l] = 'V';
+    return true;
+
+  }else if (x[y] == 'X'){
+    element[l] = 'X';
+    return true;
+
+  }else if (x[y] == 'Y'){
+    element[l] = 'Y';
+    return true;
+
+  }else if (x[y] == 'Z'){
+    element[l] = 'Z';
+    return true;
+
+  }
+
+  if (x[y] == 'a'){
+    element[l] = 'a';
+return true;
+  }else if (x[y] == 'b'){
+    element[l] = 'b';
+return true;
+  }else if (x[y] == 'c'){
+    element[l] = 'c';
+return true;
+  }else if (x[y] == 'd'){
+    element[l] = 'd';
+return true;
+  }else if (x[y] == 'e'){
+    element[l] = 'e';
+return true;
+  }else if (x[y] == 'f'){
+    element[l] = 'f';
+return true;
+  }else if (x[y] == 'g'){
+    element[l] = 'g';
+return true;
+  }else if (x[y] == 'h'){
+    element[l] = 'h';
+return true;
+  }else if (x[y] == 'i'){
+    element[l] = 'i';
+return true;
+  }else if (x[y] == 'j'){
+    element[l] = 'j';
+return true;
+  }else if (x[y] == 'k'){
+    element[l] = 'k';
+return true;
+  }else if (x[y] == 'l'){
+    element[l] = 'l';
+return true;
+  }else if (x[y] == 'm'){
+    element[l] = 'm';
+return true;
+  }else if (x[y] == 'n'){
+    element[l] = 'n';
+return true;
+  }else if (x[y] == 'o'){
+    element[l] = 'o';
+return true;
+  }else if (x[y] == 'p'){
+    element[l] = 'p';
+return true;
+  }else if (x[y] == 'q'){
+    element[l] = 'q';
+return true;
+  }else if (x[y] == 'r'){
+    element[l] = 'r';
+return true;
+  }else if (x[y] == 's'){
+    element[l] = 's';
+return true;
+  }else if (x[y] == 't'){
+    element[l] = 't';
+return true;
+  }else if (x[y] == 'u'){
+    element[l] = 'u';
+return true;
+  }else if (x[y] == 'v'){
+    element[l] = 'v';
+return true;
+  }else if (x[y] == 'x'){
+    element[l] = 'x';
+return true;
+  }else if (x[y] == 'y'){
+    element[l] = 'y';
+return true;
+  }else if (x[y] == 'z'){
+    element[l] = 'z';
+return true;
+  }else if (x[y] == '='){
+    element[l] = '=';
+    return true;
+
+  }
+
+  return false;
+
+  }
+
 
 int main(){
 
-  char y[2];
-  y[0] = 'A';
-  y[1] = 'B';
+  string equation, elements[10][2];
+  int i = 0, j = 0, k = 0, h, l = 0;
 
-  string x(y);
+  printf("Welcome to the Photomistry Project Tester In C++ Computer\n");
+  printf("PPTCC\n");
+  printf("Enter the equation you would like to balance\n");
+  getline(cin, equation);
+  printf("\n");
+  //printf("%d", equation.size());
+
+  for(i = 0; i < equation.size(); i++){
+
+        for(h = 0; h < 100; h++){
+            element[h] = NULL;
+        }
+        l = 0;
+
+                while(GetLet(equation, i, l)){
+
+                        if(element[l] == '='){
+                            l--;
+                            k++;
+                            j = 0;
+                        }
+                    i++;
+                    l++;
+                }
+                if(GetLet(equation, i - 1, l - 1)){
+                  elements[j][k] = element;
+                j++;
+                }
+
+        }
 
 
-  cout << x;
+   //printf("%d\n", equations[0].size());
+   //cout << elements[0] << endl;
+printf("Left in the Equation:\n");
 
+  for (i = 0; 0 != elements[i][0].size(); i++){
+    cout << elements[i][0] <<endl;
+  }
+  printf("\n");
+  printf("Right in the Equation:\n");
 
-  return 0;
+  for (i = 0; 0 != elements[i][1].size(); i++){
+    cout << elements[i][1] <<endl;
+  }
+
   system("PAUSE");
+  return 0;
 
 }
