@@ -189,7 +189,12 @@ return true;
     element[l] = '=';
     return true;
 
-  }else if (x[y] == '1'){
+  }else if (x[y] == '='){
+    return true;
+
+  }
+
+  else if (x[y] == '1'){
     element[l] = '1';
     return true;
 
@@ -261,8 +266,7 @@ int main(){
                                 cancel = true;
 
 
-                            k++;
-                            j = 0;
+
                         }
                     i++;
                     l++;
@@ -270,6 +274,12 @@ int main(){
                 if(GetLet(equation, i - 1, l - 1, cancel)){
                   elements[j][k] = element;
                 j++;
+                }
+                if(cancel){
+                    k++;
+                    j = 0;
+                    if (equation[i] != ' ')
+                        i--;
                 }
         }
 
@@ -279,7 +289,7 @@ int main(){
 printf("Left in the Equation:\n");
 
   for (i = 0; 0 != elements[i][0].size(); i++){
-    cout << elements[i][0] << i <<endl;
+    cout << elements[i][0] <<endl;
   }
   printf("\n");
   printf("Right in the Equation:\n");
