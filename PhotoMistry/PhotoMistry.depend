@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1554668351 source:c:\users\super\desktop\giovanni\programacion\lenguajes\c++\photomistry\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+

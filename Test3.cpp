@@ -6,7 +6,7 @@ using namespace std;
   char element[100];
 
 
-  bool GetLet(string x, int y, int l){
+  bool GetLet(string x, int y, int l, bool z){
 
   if (x[y] == 'A'){
     element[l] = 'A';
@@ -185,11 +185,48 @@ return true;
   }else if (x[y] == 'z'){
     element[l] = 'z';
 return true;
-  }else if (x[y] == '='){
+  }else if (x[y] == '=' && !z){
     element[l] = '=';
     return true;
 
+  }else if (x[y] == '1'){
+    element[l] = '1';
+    return true;
+
+  }else if (x[y] == '2'){
+    element[l] = '2';
+    return true;
+
+  }else if (x[y] == '3'){
+    element[l] = '3';
+    return true;
+
+  }else if (x[y] == '4'){
+    element[l] = '4';
+    return true;
+
+  }else if (x[y] == '5'){
+    element[l] = '5';
+    return true;
+
+  }else if (x[y] == '6'){
+    element[l] = '6';
+    return true;
+
+  }else if (x[y] == '7'){
+    element[l] = '7';
+    return true;
+
+  }else if (x[y] == '8'){
+    element[l] = '8';
+    return true;
+
+  }else if (x[y] == '9'){
+    element[l] = '9';
+    return true;
+
   }
+
 
   return false;
 
@@ -200,6 +237,7 @@ int main(){
 
   string equation, elements[10][2];
   int i = 0, j = 0, k = 0, h, l = 0;
+  bool cancel = false;
 
   printf("Welcome to the Photomistry Project Tester In C++ Computer\n");
   printf("PPTCC\n");
@@ -209,27 +247,30 @@ int main(){
   //printf("%d", equation.size());
 
   for(i = 0; i < equation.size(); i++){
+        cancel = false;
 
         for(h = 0; h < 100; h++){
             element[h] = NULL;
         }
         l = 0;
-
-                while(GetLet(equation, i, l)){
+                while(GetLet(equation, i, l, cancel) && !cancel){
 
                         if(element[l] == '='){
-                            l--;
+
+                                element[l] = NULL;
+                                cancel = true;
+
+
                             k++;
                             j = 0;
                         }
                     i++;
                     l++;
                 }
-                if(GetLet(equation, i - 1, l - 1)){
+                if(GetLet(equation, i - 1, l - 1, cancel)){
                   elements[j][k] = element;
                 j++;
                 }
-
         }
 
 
@@ -238,7 +279,7 @@ int main(){
 printf("Left in the Equation:\n");
 
   for (i = 0; 0 != elements[i][0].size(); i++){
-    cout << elements[i][0] <<endl;
+    cout << elements[i][0] << i <<endl;
   }
   printf("\n");
   printf("Right in the Equation:\n");
