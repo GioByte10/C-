@@ -3,212 +3,248 @@
 #include <iostream>
 using namespace std;
 
-  char element[2];
+                                   //To convert CHAR to STRING without losses use the STRING += CHAR[i]; method
 
-  bool GetCAP(string x, int y){
+  char element[100];
+
+
+  bool GetLet(string x, int y, int l, bool z){
 
   if (x[y] == 'A'){
-    element[0] = 'A';
+    element[l] = 'A';
     return true;
 
   }else if (x[y] == 'B'){
-    element[0] = 'B';
+    element[l] = 'B';
     return true;
 
   }else if (x[y] == 'C'){
-    element[0] = 'C';
+    element[l] = 'C';
     return true;
 
   }else if (x[y] == 'D'){
-    element[0] = 'D';
+    element[l] = 'D';
     return true;
 
   }else if (x[y] == 'E'){
-    element[0] = 'E';
+    element[l] = 'E';
     return true;
 
   }else if (x[y] == 'F'){
-    element[0] = 'F';
+    element[l] = 'F';
     return true;
 
   }else if (x[y] == 'G'){
-    element[0] = 'G';
+    element[l] = 'G';
     return true;
 
   }else if (x[y] == 'H'){
-    element[0] = 'H';
+    element[l] = 'H';
     return true;
 
   }else if (x[y] == 'I'){
-    element[0] = 'I';
+    element[l] = 'I';
     return true;
 
   }else if (x[y] == 'J'){
-    element[0] = 'J';
+    element[l] = 'J';
     return true;
 
   }else if (x[y] == 'K'){
-    element[0] = 'K';
+    element[l] = 'K';
     return true;
 
   }else if (x[y] == 'L'){
-    element[0] = 'L';
+    element[l] = 'L';
     return true;
 
   }else if (x[y] == 'M'){
-    element[0] = 'M';
+    element[l] = 'M';
     return true;
 
   }else if (x[y] == 'N'){
-    element[0] = 'N';
+    element[l] = 'N';
     return true;
 
   }else if (x[y] == 'O'){
-    element[0] = 'O';
+    element[l] = 'O';
     return true;
 
   }else if (x[y] == 'P'){
-    element[0] = 'P';
+    element[l] = 'P';
     return true;
 
   }else if (x[y] == 'Q'){
-    element[0] = 'Q';
+    element[l] = 'Q';
     return true;
 
   }else if (x[y] == 'R'){
-    element[0] = 'R';
+    element[l] = 'R';
     return true;
 
   }else if (x[y] == 'S'){
-    element[0] = 'S';
+    element[l] = 'S';
     return true;
 
   }else if (x[y] == 'T'){
-    element[0] = 'T';
+    element[l] = 'T';
     return true;
 
   }else if (x[y] == 'U'){
-    element[0] = 'U';
+    element[l] = 'U';
     return true;
 
   }else if (x[y] == 'V'){
-    element[0] = 'V';
+    element[l] = 'V';
     return true;
 
   }else if (x[y] == 'X'){
-    element[0] = 'X';
+    element[l] = 'X';
     return true;
 
   }else if (x[y] == 'Y'){
-    element[0] = 'Y';
+    element[l] = 'Y';
     return true;
 
   }else if (x[y] == 'Z'){
-    element[0] = 'Z';
+    element[l] = 'Z';
     return true;
 
-  }else if (x[y] == '='){
-    element[0] = '=';
-    return true;
   }
-
-  return false;
-
-
-  }
-
-  void GetLet(string x, int y){
 
   if (x[y] == 'a'){
-    element[1] = 'a';
-
+    element[l] = 'a';
+return true;
   }else if (x[y] == 'b'){
-    element[1] = 'b';
-
+    element[l] = 'b';
+return true;
   }else if (x[y] == 'c'){
-    element[1] = 'c';
-
+    element[l] = 'c';
+return true;
   }else if (x[y] == 'd'){
-    element[1] = 'd';
-
+    element[l] = 'd';
+return true;
   }else if (x[y] == 'e'){
-    element[1] = 'e';
-
+    element[l] = 'e';
+return true;
   }else if (x[y] == 'f'){
-    element[1] = 'f';
-
+    element[l] = 'f';
+return true;
   }else if (x[y] == 'g'){
-    element[1] = 'g';
-
+    element[l] = 'g';
+return true;
   }else if (x[y] == 'h'){
-    element[1] = 'h';
-
+    element[l] = 'h';
+return true;
   }else if (x[y] == 'i'){
-    element[1] = 'i';
-
+    element[l] = 'i';
+return true;
   }else if (x[y] == 'j'){
-    element[1] = 'j';
-
+    element[l] = 'j';
+return true;
   }else if (x[y] == 'k'){
-    element[1] = 'k';
-
+    element[l] = 'k';
+return true;
   }else if (x[y] == 'l'){
-    element[1] = 'l';
-
+    element[l] = 'l';
+return true;
   }else if (x[y] == 'm'){
-    element[1] = 'm';
-
+    element[l] = 'm';
+return true;
   }else if (x[y] == 'n'){
-    element[1] = 'n';
-
+    element[l] = 'n';
+return true;
   }else if (x[y] == 'o'){
-    element[1] = 'o';
-
+    element[l] = 'o';
+return true;
   }else if (x[y] == 'p'){
-    element[1] = 'p';
-
+    element[l] = 'p';
+return true;
   }else if (x[y] == 'q'){
-    element[1] = 'q';
-
+    element[l] = 'q';
+return true;
   }else if (x[y] == 'r'){
-    element[1] = 'r';
-
+    element[l] = 'r';
+return true;
   }else if (x[y] == 's'){
-    element[1] = 's';
-
+    element[l] = 's';
+return true;
   }else if (x[y] == 't'){
-    element[1] = 't';
-
+    element[l] = 't';
+return true;
   }else if (x[y] == 'u'){
-    element[1] = 'u';
-
+    element[l] = 'u';
+return true;
   }else if (x[y] == 'v'){
-    element[1] = 'v';
-
+    element[l] = 'v';
+return true;
   }else if (x[y] == 'x'){
-    element[1] = 'x';
-
+    element[l] = 'x';
+return true;
   }else if (x[y] == 'y'){
-    element[1] = 'y';
-
+    element[l] = 'y';
+return true;
   }else if (x[y] == 'z'){
-    element[1] = 'z';
+    element[l] = 'z';
+return true;
+  }else if (x[y] == '=' && !z){
+    element[l] = '=';
+    return true;
 
   }else if (x[y] == '='){
-    element[1] = '=';
+    return true;
+
+  }
+
+  else if (x[y] == '1'){
+    element[l] = '1';
+    return true;
+
+  }else if (x[y] == '2'){
+    element[l] = '2';
+    return true;
+
+  }else if (x[y] == '3'){
+    element[l] = '3';
+    return true;
+
+  }else if (x[y] == '4'){
+    element[l] = '4';
+    return true;
+
+  }else if (x[y] == '5'){
+    element[l] = '5';
+    return true;
+
+  }else if (x[y] == '6'){
+    element[l] = '6';
+    return true;
+
+  }else if (x[y] == '7'){
+    element[l] = '7';
+    return true;
+
+  }else if (x[y] == '8'){
+    element[l] = '8';
+    return true;
+
+  }else if (x[y] == '9'){
+    element[l] = '9';
+    return true;
 
   }
 
 
+  return false;
 
   }
 
 
 int main(){
 
-  string equation, elements[10][2], Sside[10];
-  bool cond, side = false;
-  int i = 0, j = 0, k = 0;
+  string equation, elements[10][2];
+  int i = 0, j = 0, k = 0, h, l = 0;
+  bool cancel = false;
 
   printf("Welcome to the Photomistry Project Tester In C++ Computer\n");
   printf("PPTCC\n");
@@ -218,35 +254,37 @@ int main(){
   //printf("%d", equation.size());
 
   for(i = 0; i < equation.size(); i++){
+        cancel = false;
 
-        element[0] = NULL;
-        element[1] = NULL;
-        cond = GetCAP(equation, i);
+        for(h = 0; h < 100; h++){
+            element[h] = NULL;
+        }
+        l = 0;
+                while(GetLet(equation, i, l, cancel) && !cancel){
+
+                        if(element[l] == '='){
+
+                                element[l] = NULL;
+                                cancel = true;
 
 
-        if (cond){
-                if(element[0] == '='){
+
+                        }
+                    i++;
+                    l++;
+                }
+                if(GetLet(equation, i - 1, l - 1, cancel)){
+                  elements[j][k] = element;
+                j++;
+                }
+                if(cancel){
                     k++;
                     j = 0;
-
-                }else{
-            i++;
-            GetLet(equation, i);
-            if(element[1] == '='){
-                element[1] = NULL;
-                elements[j][k] = element;
-                j = 0;
-                k++;
-            }else{
-            elements[j][k] = element;
-                j++;
-
-            }
-
+                    if (equation[i] != ' ')
+                        i--;
                 }
-
         }
-  }
+
 
    //printf("%d\n", equations[0].size());
    //cout << elements[0] << endl;
@@ -266,3 +304,4 @@ printf("Left in the Equation:\n");
   return 0;
 
 }
+

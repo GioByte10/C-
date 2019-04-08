@@ -286,6 +286,25 @@ int main(){
 
    //printf("%d\n", equations[0].size());
    //cout << elements[0] << endl;
+
+   for (i = 0; 0 != elements[i][0].size(); i++){
+    if (elements[i][0] == "O"){
+        printf("We think there's a problem, Oxygen is a diatomic element (O2)\n");
+  }else if (elements[i][0] == "H"){
+        printf("We think there's a problem, Hydrogen is a diatomic element (H2)\n");
+  }else if (elements[i][0] == "N"){
+        printf("We think there's a problem, Nitrogen is a diatomic element (N2)\n");
+  }else if (elements[i][0] == "F"){
+        printf("We think there's a problem, Fluorine is a diatomic element (F2)\n");
+  }else if (elements[i][0] == "I"){
+        printf("We think there's a problem, Iodine is a diatomic element (I2)\n");
+  }else if (elements[i][0] == "Cl"){
+        printf("We think there's a problem, Chlorine is a diatomic element (Cl2)\n");
+  }else if (elements[i][0] == "Br"){
+        printf("We think there's a problem, Bromine is a diatomic element (Br2)\n");
+  }
+   }
+
 printf("Left in the Equation:\n");
 
   for (i = 0; 0 != elements[i][0].size(); i++){
@@ -297,6 +316,8 @@ printf("Left in the Equation:\n");
   for (i = 0; 0 != elements[i][1].size(); i++){
     cout << elements[i][1] <<endl;
   }
+
+
 
   system("PAUSE");
   return 0;
