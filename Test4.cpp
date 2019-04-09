@@ -417,7 +417,6 @@ if (j > 0){
 if (j > 0)
    cout << "In the Right side of the equation, " << advice << endl;
 
-
 printf("Left in the Equation:\n");
 
   for (i = 0; 0 != elements[i][0].size(); i++){
@@ -429,8 +428,6 @@ printf("Left in the Equation:\n");
   for (i = 0; 0 != elements[i][1].size(); i++){
     cout << elements[i][1] <<endl;
   }
-
-
 
   system("PAUSE");
   return 0;
