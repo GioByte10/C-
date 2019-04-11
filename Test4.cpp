@@ -243,6 +243,7 @@ int main(){
   string equation, elements[10][2], advice;
   int i = 0, j = 0, k = 0, h, l = 0;
   bool cancel = false;
+  char Cequation[100];
 
   printf("Welcome to the Photomistry Project Tester In C++ Computer\n");
   printf("PPTCC\n");
