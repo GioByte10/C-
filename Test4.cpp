@@ -8,6 +8,8 @@ using namespace std;
 
   bool GetLet(string x, int y, int l, bool z){
 
+      if(x[y] != ' '){
+
   if (x[y] == 'A'){
     element[l] = 'A';
     return true;
@@ -192,9 +194,13 @@ return true;
   }else if (x[y] == '='){
     return true;
 
-  }
+  }else if(l > 0 ){
 
-  else if (x[y] == '1'){
+    if (x[y] == '0'){
+    element[l] = '0';
+    return true;
+
+    }else if (x[y] == '1'){
     element[l] = '1';
     return true;
 
@@ -202,7 +208,16 @@ return true;
     element[l] = '2';
     return true;
 
-  }else if (x[y] == '3'){
+
+   }else if (x[y] == '1'){
+    element[l] = '1';
+    return true;
+
+  }else if (x[y] == '2'){
+    element[l] = '2';
+    return true;
+
+  }else if(x[y] == '3'){
     element[l] = '3';
     return true;
 
@@ -231,9 +246,16 @@ return true;
     return true;
 
   }
+  }
+
 
 
   return false;
+      }else{
+
+         return false;
+
+      }
 
   }
 
@@ -243,6 +265,7 @@ int main(){
   string equation, elements[10][2], advice;
   int i = 0, j = 0, k = 0, h, l = 0;
   bool cancel = false;
+
   char Cequation[100];
 
   printf("Welcome to the Photomistry Project Tester In C++ Computer\n");
@@ -250,7 +273,6 @@ int main(){
   printf("Enter the equation you would like to balance\n");
   getline(cin, equation);
   printf("\n");
-  //printf("%d", equation.size());
 
   for(i = 0; i < equation.size(); i++){
         cancel = false;
@@ -284,20 +306,21 @@ int main(){
                 }
         }
 
+for (h = 0; h < 2; h++){
+
+        advice = "we think there's a problem, ";
 
    j = 0;
    k = 0;
-   h = 0;
    l = 0;
 
-
-   for(i = 0; 0 < elements[i][0].size(); i++){
+   /*for(i = 0; 0 < elements[i][h].size(); i++){
     l++;
-   }
+   }*/
 
-   advice = "we think there's a problem, ";
-   for(i = 0; 0 < elements[i][0].size(); i++){
-    if (elements[i][0] == "O" || elements[i][0] == "N" || elements[i][0] == "F" || elements[i][0] == "H" || elements[i][0] == "Br" || elements[i][0] == "Cl" || elements[i][0] == "I")
+
+   for(i = 0; 0 < elements[i][h].size(); i++){
+    if (elements[i][h] == "O" || elements[i][h] == "N" || elements[i][h] == "F" || elements[i][h] == "H" || elements[i][h] == "Br" || elements[i][h] == "Cl" || elements[i][h] == "I")
        k++;
 
    }
@@ -309,25 +332,25 @@ int main(){
         }
 
 
-    if (elements[i][0] == "O"){
+    if (elements[i][h] == "O"){
         advice += "Oxygen (O2) ";
         j++;
-  }else if (elements[i][0] == "H"){
+  }else if (elements[i][h] == "H"){
         advice += "Hydrogen (H2) ";
         j++;
-  }else if (elements[i][0] == "N"){
+  }else if (elements[i][h] == "N"){
         advice += "Nitrogen (N2) ";
         j++;
-  }else if (elements[i][0] == "F"){
+  }else if (elements[i][h] == "F"){
         advice += "Fluorine (F2) ";
         j++;
-  }else if (elements[i][0] == "I"){
+  }else if (elements[i][h] == "I"){
         advice += "Iodine (I2) ";
         j++;
-  }else if (elements[i][0] == "Cl"){
+  }else if (elements[i][h] == "Cl"){
         advice += "Chlorine (Cl2) ";
         j++;
-  }else if (elements[i][0] == "Br"){
+  }else if (elements[i][h] == "Br"){
         advice += "Bromine (Br2) ";
         j++;
   }
@@ -340,83 +363,21 @@ int main(){
     advice += "is a diatomic element";
    }
 if (j > 0){
+
+    if(h == 0){
    cout << "In the left side of the equation, " << advice << endl;
    printf("\n\n");
-   printf("Would you like to correct it? (y/n)");
-   cin  >> advice;
+    }else if (h == 1){
+   cout << "In the right side of the equation, " << advice << endl;
+   printf("\n\n");
+    }else{
 
-   if (advice == "y" || advice == "Y"){
+       printf("There is a real Problem\n");
 
-
-
-   }
+    }
 
 }
-
-////////////////////////////////////////////////////////////////////////////////////////
-
-   j = 0;
-   k = 0;
-   h = 0;
-   l = 0;
-
-
-   for(i = 0; 0 < elements[i][1].size(); i++){
-    l++;
-   }
-
-   advice = "we think there's a problem, ";
-   for(i = 0; 0 < elements[i][1].size(); i++){
-    if (elements[i][1] == "O" || elements[i][1] == "N" || elements[i][1] == "F" || elements[i][1] == "H" || elements[i][1] == "Br" || elements[i][1] == "Cl" || elements[i][1] == "I")
-       k++;
-
-   }
-
-   for (i = 0; 0 != elements[i][1].size(); i++){
-
-        if (j == k - 1 && j > 0){
-           advice += "and ";
-        }
-
-
-    if (elements[i][1] == "O"){
-        advice += "Oxygen (O2) ";
-        j++;
-  }else if (elements[i][1] == "H"){
-        advice += "Hydrogen (H2) ";
-        j++;
-  }else if (elements[i][1] == "N"){
-        advice += "Nitrogen (N2) ";
-        j++;
-  }else if (elements[i][1] == "F"){
-        advice += "Fluorine (F2) ";
-        j++;
-  }else if (elements[i][1] == "I"){
-        advice += "Iodine (I2) ";
-        j++;
-  }else if (elements[i][1] == "Cl"){
-        advice += "Chlorine (Cl2) ";
-        j++;
-  }else if (elements[i][1] == "Br"){
-        advice += "Bromine (Br2) ";
-        j++;
-  }
-
-
-
-
-
-       // printf("%d      %d\n", j, k);
-
-   }
-
-   if (j > 1){
-    advice += "are diatomic elements";
-   }else{
-    advice += "is a diatomic element";
-   }
-if (j > 0)
-   cout << "In the Right side of the equation, " << advice << endl;
+}
 
 printf("Left in the Equation:\n");
 
