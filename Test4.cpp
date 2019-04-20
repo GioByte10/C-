@@ -9,7 +9,7 @@ using namespace std;
 
   bool GetLet(string x, int y, int l, bool z){
 
-      if(x[y] != ' ' && x[y] != '+'){
+      if(x[y] != ' ' && x[y] != '+' && x[y] != NULL){
 
   if (x[y] == 'A'){
     element[l] = 'A';
@@ -329,7 +329,7 @@ return true;
 int main(){
 
   string equation, elements[100][2], advice, aux, Relements[100][2];
-  int i = 0, j = 0, k = 0, h = 0, l = 0, p = 0;
+  int i = 0, j = 0, k = 0, h = 0, l = 0, p = 0, q = 0;
   bool cancel = false;
 
   char Cequation[100];
@@ -529,26 +529,31 @@ printf("Left in the Equation:\n");
 
     for(i = 0; 0 != elements[i][h].size(); i++){
 
+        for(j = 0; j < elements[i][h].size(); j++){
+
+                for(q = 0; q < 100; q++){
+            element[q] = NULL;
+        }
+
         l = 0;
         k = 0;
 
-        for(j = 0; j < elements[i][h].size(); j++){
+            while(GetLet(elements[i][h], j, l, cancel)){
 
-            while(GetLet(elements[i][h], j, l, cancel) && !cancel){
-
-                j++;
-                l++;
-
-                if(character == 0){
+                    if(character == 0){
                         character = 3;
                     k++;
 
                 }
                 if(k > 1){
                         element[l] = NULL;
-                        j--;
+                        //j--;
+                        l = 0;
                         break;
                     }
+
+                j++;
+                l++;
 
             }
 
@@ -556,14 +561,14 @@ printf("Left in the Equation:\n");
             Relements[p][h] = element;
             p++;
            }
-
         }
     }
   }
-
+printf("In the left side of the equation:\n");
   for (i = 0; 0 != Relements[i][0].size(); i++){
     cout << Relements[i][0] << endl;
   }
+printf("In the right side of the equation:\n");
   for (i = 0; 0 != Relements[i][1].size(); i++){
     cout << Relements[i][1] << endl;
   }
