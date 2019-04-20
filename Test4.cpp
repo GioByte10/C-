@@ -105,7 +105,7 @@ using namespace std;
     character = 0;
     element[l] = 'S';
     return true;
-j
+
   }else if (x[y] == 'T'){
     character = 0;
     element[l] = 'T';
@@ -537,6 +537,7 @@ printf("Left in the Equation:\n");
 
         l = 0;
         k = 0;
+        cancel = false;
 
             while(GetLet(elements[i][h], j, l, cancel)){
 
@@ -547,20 +548,22 @@ printf("Left in the Equation:\n");
                 }
                 if(k > 1){
                         element[l] = NULL;
-                        if (j  j )
-                        j--;
-                        l = 0;
+                        /*j++;
+                        l++;*/
+                        cancel = true;
                         break;
                     }
-
                 j++;
-                l++;
-
+                l++;                                         //Cl2 + KOH = KCl + KClO3 + H2O
             }
 
            if(GetLet(elements[i][h], j - 1, l -1, cancel)){
             Relements[p][h] = element;
             p++;
+           }
+           if (cancel){
+            l = 0;
+            j--;
            }
         }
     }
@@ -573,6 +576,8 @@ printf("In the right side of the equation:\n");
   for (i = 0; 0 != Relements[i][1].size(); i++){
     cout << Relements[i][1] << endl;
   }
+
+
 
   }
         }else{
