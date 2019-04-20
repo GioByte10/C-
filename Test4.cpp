@@ -105,7 +105,7 @@ using namespace std;
     character = 0;
     element[l] = 'S';
     return true;
-
+j
   }else if (x[y] == 'T'){
     character = 0;
     element[l] = 'T';
@@ -547,7 +547,8 @@ printf("Left in the Equation:\n");
                 }
                 if(k > 1){
                         element[l] = NULL;
-                        //j--;
+                        if (j  j )
+                        j--;
                         l = 0;
                         break;
                     }
