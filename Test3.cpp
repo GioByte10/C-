@@ -3,14 +3,34 @@
 #include <iostream>
 using namespace std;
 
+   int GET (char x){
+
+      if (x == 'a'){
+        return 0;
+      }if (x == 'b'){
+        return 1;
+      }if (x == 'c'){
+        return 2;
+      }if (x == 'd'){
+        return 3;
+      }if (x == 'e'){
+        return 4;
+      }if (x == 'f'){
+        return 5;
+      }
+
+   }
+
 int main(){
 
-  string equation = "H2 + ";
+  char y;
+  string t;
 
-  printf("Welcome to the Photomistry Project Tester in C++ Computer by Blocks\n");
-  printf("PPTCCB\n");
-  printf("Trying to sepair the following equation: \n \n \n");
-  printf("→");
+  cin >> y;
+
+  if(GET(y)){
+    printf("WORKS\n\n");
+  }
 
   system("PAUSE");
   return 0;

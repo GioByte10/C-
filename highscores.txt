@@ -1,2 +1,600 @@
-ABC[10] = 'W';ABC[11] = '
-';ABC[12] = 'z';
+if (x.contains("H")){
+Purelements[x][y] = "H" ;
+return true;
+}
+
+if (x.contains("He")){
+Purelements[x][y] = "He" ;
+return true;
+}
+
+if (x.contains("Li")){
+Purelements[x][y] = "Li" ;
+return true;
+}
+
+if (x.contains("Be")){
+Purelements[x][y] = "Be" ;
+return true;
+}
+
+if (x.contains("B")){
+Purelements[x][y] = "B" ;
+return true;
+}
+
+if (x.contains("C")){
+Purelements[x][y] = "C" ;
+return true;
+}
+
+if (x.contains("N")){
+Purelements[x][y] = "N" ;
+return true;
+}
+
+if (x.contains("O")){
+Purelements[x][y] = "O" ;
+return true;
+}
+
+if (x.contains("F")){
+Purelements[x][y] = "F" ;
+return true;
+}
+
+if (x.contains("Ne")){
+Purelements[x][y] = "Ne" ;
+return true;
+}
+
+if (x.contains("Na")){
+Purelements[x][y] = "Na" ;
+return true;
+}
+
+if (x.contains("Mg")){
+Purelements[x][y] = "Mg" ;
+return true;
+}
+
+if (x.contains("Al")){
+Purelements[x][y] = "Al" ;
+return true;
+}
+
+if (x.contains("Si")){
+Purelements[x][y] = "Si" ;
+return true;
+}
+
+if (x.contains("P")){
+Purelements[x][y] = "P" ;
+return true;
+}
+
+if (x.contains("S")){
+Purelements[x][y] = "S" ;
+return true;
+}
+
+if (x.contains("Cl")){
+Purelements[x][y] = "Cl" ;
+return true;
+}
+
+if (x.contains("Ar")){
+Purelements[x][y] = "Ar" ;
+return true;
+}
+
+if (x.contains("K")){
+Purelements[x][y] = "K" ;
+return true;
+}
+
+if (x.contains("Ca")){
+Purelements[x][y] = "Ca" ;
+return true;
+}
+
+if (x.contains("Sc")){
+Purelements[x][y] = "Sc" ;
+return true;
+}
+
+if (x.contains("Ti")){
+Purelements[x][y] = "Ti" ;
+return true;
+}
+
+if (x.contains("V")){
+Purelements[x][y] = "V" ;
+return true;
+}
+
+if (x.contains("Cr")){
+Purelements[x][y] = "Cr" ;
+return true;
+}
+
+if (x.contains("Mn")){
+Purelements[x][y] = "Mn" ;
+return true;
+}
+
+if (x.contains("Fe")){
+Purelements[x][y] = "Fe" ;
+return true;
+}
+
+if (x.contains("Co")){
+Purelements[x][y] = "Co" ;
+return true;
+}
+
+if (x.contains("Ni")){
+Purelements[x][y] = "Ni" ;
+return true;
+}
+
+if (x.contains("Cu")){
+Purelements[x][y] = "Cu" ;
+return true;
+}
+
+if (x.contains("Zn")){
+Purelements[x][y] = "Zn" ;
+return true;
+}
+
+if (x.contains("Ga")){
+Purelements[x][y] = "Ga" ;
+return true;
+}
+
+if (x.contains("Ge")){
+Purelements[x][y] = "Ge" ;
+return true;
+}
+
+if (x.contains("As")){
+Purelements[x][y] = "As" ;
+return true;
+}
+
+if (x.contains("")){
+Purelements[x][y] = "" ;
+return true;
+}
+
+if (x.contains("Se")){
+Purelements[x][y] = "Se" ;
+return true;
+}
+
+if (x.contains("Br")){
+Purelements[x][y] = "Br" ;
+return true;
+}
+
+if (x.contains("Kr")){
+Purelements[x][y] = "Kr" ;
+return true;
+}
+
+if (x.contains("Rb")){
+Purelements[x][y] = "Rb" ;
+return true;
+}
+
+if (x.contains("Sr")){
+Purelements[x][y] = "Sr" ;
+return true;
+}
+
+if (x.contains("Y")){
+Purelements[x][y] = "Y" ;
+return true;
+}
+
+if (x.contains("Zr")){
+Purelements[x][y] = "Zr" ;
+return true;
+}
+
+if (x.contains("Nb")){
+Purelements[x][y] = "Nb" ;
+return true;
+}
+
+if (x.contains("Mo")){
+Purelements[x][y] = "Mo" ;
+return true;
+}
+
+if (x.contains("Tc")){
+Purelements[x][y] = "Tc" ;
+return true;
+}
+
+if (x.contains("Ru")){
+Purelements[x][y] = "Ru" ;
+return true;
+}
+
+if (x.contains("Rh")){
+Purelements[x][y] = "Rh" ;
+return true;
+}
+
+if (x.contains("Pd")){
+Purelements[x][y] = "Pd" ;
+return true;
+}
+
+if (x.contains("Ag")){
+Purelements[x][y] = "Ag" ;
+return true;
+}
+
+if (x.contains("Cd")){
+Purelements[x][y] = "Cd" ;
+return true;
+}
+
+if (x.contains("In")){
+Purelements[x][y] = "In" ;
+return true;
+}
+
+if (x.contains("Sn")){
+Purelements[x][y] = "Sn" ;
+return true;
+}
+
+if (x.contains("Sb")){
+Purelements[x][y] = "Sb" ;
+return true;
+}
+
+if (x.contains("Te")){
+Purelements[x][y] = "Te" ;
+return true;
+}
+
+if (x.contains("I")){
+Purelements[x][y] = "I" ;
+return true;
+}
+
+if (x.contains("Xe")){
+Purelements[x][y] = "Xe" ;
+return true;
+}
+
+if (x.contains("Cs")){
+Purelements[x][y] = "Cs" ;
+return true;
+}
+
+if (x.contains("Ba")){
+Purelements[x][y] = "Ba" ;
+return true;
+}
+
+if (x.contains("La")){
+Purelements[x][y] = "La" ;
+return true;
+}
+
+if (x.contains("Ce")){
+Purelements[x][y] = "Ce" ;
+return true;
+}
+
+if (x.contains("Pr")){
+Purelements[x][y] = "Pr" ;
+return true;
+}
+
+if (x.contains("Nd")){
+Purelements[x][y] = "Nd" ;
+return true;
+}
+
+if (x.contains("Pm")){
+Purelements[x][y] = "Pm" ;
+return true;
+}
+
+if (x.contains("Sm")){
+Purelements[x][y] = "Sm" ;
+return true;
+}
+
+if (x.contains("Eu")){
+Purelements[x][y] = "Eu" ;
+return true;
+}
+
+if (x.contains("Gd")){
+Purelements[x][y] = "Gd" ;
+return true;
+}
+
+if (x.contains("Tb")){
+Purelements[x][y] = "Tb" ;
+return true;
+}
+
+if (x.contains("Dy")){
+Purelements[x][y] = "Dy" ;
+return true;
+}
+
+if (x.contains("Ho")){
+Purelements[x][y] = "Ho" ;
+return true;
+}
+
+if (x.contains("Er")){
+Purelements[x][y] = "Er" ;
+return true;
+}
+
+if (x.contains("Tm")){
+Purelements[x][y] = "Tm" ;
+return true;
+}
+
+if (x.contains("Yb")){
+Purelements[x][y] = "Yb" ;
+return true;
+}
+
+if (x.contains("Lu")){
+Purelements[x][y] = "Lu" ;
+return true;
+}
+
+if (x.contains("Hf")){
+Purelements[x][y] = "Hf" ;
+return true;
+}
+
+if (x.contains("Ta")){
+Purelements[x][y] = "Ta" ;
+return true;
+}
+
+if (x.contains("W")){
+Purelements[x][y] = "W" ;
+return true;
+}
+
+if (x.contains("Re")){
+Purelements[x][y] = "Re" ;
+return true;
+}
+
+if (x.contains("Os")){
+Purelements[x][y] = "Os" ;
+return true;
+}
+
+if (x.contains("Ir")){
+Purelements[x][y] = "Ir" ;
+return true;
+}
+
+if (x.contains("Pt")){
+Purelements[x][y] = "Pt" ;
+return true;
+}
+
+if (x.contains("Au")){
+Purelements[x][y] = "Au" ;
+return true;
+}
+
+if (x.contains("Hg")){
+Purelements[x][y] = "Hg" ;
+return true;
+}
+
+if (x.contains("Tl")){
+Purelements[x][y] = "Tl" ;
+return true;
+}
+
+if (x.contains("Pb")){
+Purelements[x][y] = "Pb" ;
+return true;
+}
+
+if (x.contains("Bi")){
+Purelements[x][y] = "Bi" ;
+return true;
+}
+
+if (x.contains("Po")){
+Purelements[x][y] = "Po" ;
+return true;
+}
+
+if (x.contains("At")){
+Purelements[x][y] = "At" ;
+return true;
+}
+
+if (x.contains("Rn")){
+Purelements[x][y] = "Rn" ;
+return true;
+}
+
+if (x.contains("Fr")){
+Purelements[x][y] = "Fr" ;
+return true;
+}
+
+if (x.contains("Ra")){
+Purelements[x][y] = "Ra" ;
+return true;
+}
+
+if (x.contains("Ac")){
+Purelements[x][y] = "Ac" ;
+return true;
+}
+
+if (x.contains("Th")){
+Purelements[x][y] = "Th" ;
+return true;
+}
+
+if (x.contains("Pa")){
+Purelements[x][y] = "Pa" ;
+return true;
+}
+
+if (x.contains("U")){
+Purelements[x][y] = "U" ;
+return true;
+}
+
+if (x.contains("Np")){
+Purelements[x][y] = "Np" ;
+return true;
+}
+
+if (x.contains("Pu")){
+Purelements[x][y] = "Pu" ;
+return true;
+}
+
+if (x.contains("Am")){
+Purelements[x][y] = "Am" ;
+return true;
+}
+
+if (x.contains("Cm")){
+Purelements[x][y] = "Cm" ;
+return true;
+}
+
+if (x.contains("Bk")){
+Purelements[x][y] = "Bk" ;
+return true;
+}
+
+if (x.contains("Cf")){
+Purelements[x][y] = "Cf" ;
+return true;
+}
+
+if (x.contains("Es")){
+Purelements[x][y] = "Es" ;
+return true;
+}
+
+if (x.contains("Fm")){
+Purelements[x][y] = "Fm" ;
+return true;
+}
+
+if (x.contains("Md")){
+Purelements[x][y] = "Md" ;
+return true;
+}
+
+if (x.contains("No")){
+Purelements[x][y] = "No" ;
+return true;
+}
+
+if (x.contains("Lr")){
+Purelements[x][y] = "Lr" ;
+return true;
+}
+
+if (x.contains("Rf")){
+Purelements[x][y] = "Rf" ;
+return true;
+}
+
+if (x.contains("Db")){
+Purelements[x][y] = "Db" ;
+return true;
+}
+
+if (x.contains("Sg")){
+Purelements[x][y] = "Sg" ;
+return true;
+}
+
+if (x.contains("Bh")){
+Purelements[x][y] = "Bh" ;
+return true;
+}
+
+if (x.contains("Hs")){
+Purelements[x][y] = "Hs" ;
+return true;
+}
+
+if (x.contains("Mt")){
+Purelements[x][y] = "Mt" ;
+return true;
+}
+
+if (x.contains("Ds")){
+Purelements[x][y] = "Ds" ;
+return true;
+}
+
+if (x.contains("Rg")){
+Purelements[x][y] = "Rg" ;
+return true;
+}
+
+if (x.contains("Cn")){
+Purelements[x][y] = "Cn" ;
+return true;
+}
+
+if (x.contains("Nh")){
+Purelements[x][y] = "Nh" ;
+return true;
+}
+
+if (x.contains("Fl")){
+Purelements[x][y] = "Fl" ;
+return true;
+}
+
+if (x.contains("Mc")){
+Purelements[x][y] = "Mc" ;
+return true;
+}
+
+if (x.contains("Lv")){
+Purelements[x][y] = "Lv" ;
+return true;
+}
+
+if (x.contains("Ts")){
+Purelements[x][y] = "Ts" ;
+return true;
+}
+
+if (x.contains("Og")){
+Purelements[x][y] = "Og" ;
+return true;
+}
+
+if (x.contains("zab")){
+Purelements[x][y] = "zab" ;
+return true;
+}
+

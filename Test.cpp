@@ -8,21 +8,20 @@ using namespace std;
 
 int main()
 {
-    char lett;
+    string lett;
     int i = 0;
 
-    while(lett != 'z'){
+    while(lett != "zab"){
 
-            scanf("%c", &lett);
+            getline(cin, lett);
 
 	ofstream HighScoreFile;
 	HighScoreFile.open("highscores.txt",ios::app|ios::ate);
-	HighScoreFile << "ABC[" << i << "] = '" << lett << "';";
+	HighScoreFile << "if (x.contains(\"" << lett << "\")){" << endl <<"Purelements[x][y] = \"" << lett << "\" ;" << endl << "return true;" << endl << "}" << endl << endl;
 	HighScoreFile.close();
 
 	HighScoreFile.seekp(0,std::ios::end); //to ensure the put pointer is at the end
-	HighScoreFile << "ABC[" << i << "] = '" << lett << "';";
-
+	HighScoreFile << "if (x.contains(\"" << lett << "\")){" << endl <<"Purelements[x][y] = \"" << lett << "\" ;" << endl << "return true;" << endl << "}" << endl << endl;
 	   i++;
 
     }

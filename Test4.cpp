@@ -4,7 +4,7 @@
 using namespace std;
 
   char element[100];
-  int character;
+  int character, sub;
 
 
   bool GetLet(string x, int y, int l, bool z){
@@ -325,6 +325,13 @@ return true;
 
   }
 
+  int PTElements (string x, int y){
+
+     if (x == "H"){
+
+     }
+
+  }
 
 int main(){
 
