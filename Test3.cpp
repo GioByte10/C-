@@ -3,21 +3,23 @@
 #include <iostream>
 using namespace std;
 
-   int GET (char x){
+   bool GET (char x){
 
       if (x == 'a'){
-        return 0;
+        return true;
       }if (x == 'b'){
         return 1;
       }if (x == 'c'){
-        return 2;
+        return true;
       }if (x == 'd'){
-        return 3;
+        return true;
       }if (x == 'e'){
-        return 4;
+        return true;
       }if (x == 'f'){
-        return 5;
+        return true;
       }
+
+      return false;
 
    }
 

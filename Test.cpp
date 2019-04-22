@@ -17,11 +17,11 @@ int main()
 
 	ofstream HighScoreFile;
 	HighScoreFile.open("highscores.txt",ios::app|ios::ate);
-	HighScoreFile << "if (x.contains(\"" << lett << "\")){" << endl <<"Purelements[x][y] = \"" << lett << "\" ;" << endl << "return true;" << endl << "}" << endl << endl;
+	HighScoreFile << "else if (x.contains(\"" << lett << "\")){" << endl <<"Purelements[y][z] = \"" << lett << "\" ;" << endl << "return true;" << endl << "}" << endl << endl;
 	HighScoreFile.close();
 
 	HighScoreFile.seekp(0,std::ios::end); //to ensure the put pointer is at the end
-	HighScoreFile << "if (x.contains(\"" << lett << "\")){" << endl <<"Purelements[x][y] = \"" << lett << "\" ;" << endl << "return true;" << endl << "}" << endl << endl;
+	HighScoreFile << "else if (x.contains(\"" << lett << "\")){" << endl <<"Purelements[y][z] = \"" << lett << "\" ;" << endl << "return true;" << endl << "}" << endl << endl;
 	   i++;
 
     }
