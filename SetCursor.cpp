@@ -9,17 +9,18 @@ int main()
 {
 
     int x, y;
-    x = 52;
-    y = 597;
+    x = 162;
+    y = 540;
 
-    while(true){
 
-    Sleep(4000);
-    SetCursorPos(x, y);                                   //Changes the cursor position
+    while(!(GetAsyncKeyState(0x11))){
+
+    /*Sleep(200);
+    SetCursorPos(x, y);                                   //Changes the cursor position*/
     Sleep(200);
     mouse_event(MOUSEEVENTF_LEFTDOWN, x, y, 0, 0);
     mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, 0);          //Simulate a click
-    Sleep(62000);
+
     }
 
 
