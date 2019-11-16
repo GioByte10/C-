@@ -41,7 +41,7 @@ void processing (){
 
 int main(){
 
-  string motorN;
+  int motorN;
   double Diameter = 0, Force = 0, Sfree = 0, Tstall = 0, Ifree = 0, Istall = 0, Voltage = 0, Torque = 0, Current = 0, Speed = 0, Power = 0, Efficiency = 0, Circumference = 0, NRevolutions = 0, RPower = 0, cases = 0, j = 1, i = 1;
   const double PI = 3.14159265;
   int Distance = 0;
@@ -53,13 +53,13 @@ int main(){
 
   printf("Welcome to the MoPCa Project, or Motor Properties Calculator\n\n");
   printf("Please choose a motor to use in the Virtual Test\n");
-  printf("1.- CIM Motor\n");
+  printf("1.- CIM Motor\n2.-K-43145D158\n");
   cin >> motorN;
 
-  if(motorN == "CIM"){
+  if(motorN == 1){
 
     printf("\n");
-    printf("     CIM Motor: 217-2000\n");
+    printf("     CIM Motor: 217-2000  (12V)\n");
     printf("Free Speed =    5330 RPM\n");
     printf("Stall Torque =  2.41 N * m\n");
     printf("Free Current =  2.7 Amp\n");
@@ -71,6 +71,23 @@ int main(){
     Ifree = 2.7;
     Istall = 131;
     Voltage = 12;
+
+  }else if(motorN == 2){
+
+    printf("\n");
+    printf("     K-43145D158 Motor: (12V)\n");
+    printf("Free Speed =    23,000 RPM\n");
+    printf("Stall Torque =  0.43164 N * m\n");
+    printf("Free Current =  2.68 Amp\n");
+    printf("Stall Current = 86.25 Amp\n");
+    printf("Maximum Power = 256 W\n\n");
+
+    Sfree = 23000;
+    Tstall = 0.43164;
+    Ifree = 2.68;
+    Istall = 86.25;
+    Voltage = 12;
+
 
   }else{
 
