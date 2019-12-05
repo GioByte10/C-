@@ -1,12 +1,15 @@
-#include <stdlib.h>
-#include <windows.h>
-#include <iostream>
+#include <stdio.h>
+
+
+#define print printf(
+#define a );
+#define ask if
 
 int main(){
 
-   while (true){
 
-    ShellExecute(NULL, "open", "D:\Programacion\Lenguajes\C++\Crash.exe", NULL, NULL, SW_SHOWDEFAULT);
 
-   }
+
+     print "Hi" a
+
 }
