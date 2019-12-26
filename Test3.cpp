@@ -1,34 +1,28 @@
-#include <iostream>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <windows.h>
 using namespace std;
-
-int countDigit(long long n)
-{
-    int count = 0;
-    while (n != 0) {
-        n = n / 10;
-        ++count;
-    }
-    return count;
-}
 
 int main(){
 
-    int n, z;
 
+  int test[10], ran;
 
-  for(int i = 31; i <= 60; i++){
+  srand(time(NULL));
 
-    printf("mminht");
-    n = countDigit(i);
-    for(z = 4 - n; z > 0; z--){
-        printf("0");
-    }
-    printf("%d", i);
-    printf("@mymail.lausd.net\n");
+  for(int i = 0; i < test; i++){
+
+    test[i] = rand() % 100;
+    printf("%d\n", test[i]);
 
   }
 
+  //for(int i = 0; i )
+
+
+
+  system("PAUSE");
+  return 0;
 
 }

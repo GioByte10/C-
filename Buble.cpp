@@ -11,6 +11,8 @@ int main()
         for (j = 0; j < 5; j++){
             if (num[j] > num[j+1]){
 
+                    printf("%d\n", j);
+
                 aux = num[j];
                 num[j] = num[j + 1];
                 num[j + 1] = aux;
@@ -20,7 +22,7 @@ int main()
     }
 
 
-  for (k = 4; k >= 0; k--){
+  for (k = 0; k <= 4; k++){
     printf("%d", num[k]);
   }
 
