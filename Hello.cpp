@@ -1,13 +1,14 @@
 #include <stdio.h>
-#include <string>
-#include <windows.h>
+#include <stdlib.h>
 #include <iostream>
 using namespace std;
 
 
 int main()
 {
- printf ("Hola Mundo");
+    printf ("Hello World");
 
+    System("PUASE");
+    return 0;
 
 }
