@@ -49,6 +49,7 @@ int main()
             {
                 cout<<matriz[j][i]<<" ";
             }
+
                  cout<<""<<endl;
      }
 
