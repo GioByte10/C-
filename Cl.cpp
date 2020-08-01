@@ -9,7 +9,7 @@ int main(){
 
         system("taskkill /im minecraft.windows.exe /F");
 
-        random = (7 + rand() % (11)) * 60000;
+        random = (0 + rand() % (3)) * 60000;
 
         Sleep(random);
 
