@@ -1,21 +1,13 @@
-#include <stdio.h>
 #include <windows.h>
 #include <ctime>
 #include <string>
 using namespace std;
 
+time_t now = time(nullptr);
+tm *ltm = localtime(&now);
+
 int main(){
 
-int days[15][2] = {
-
-    {1},      {1},     {1},      {1},
-    {2, 4, 9},   {2, 4},  {2, 4},   {2, 4},
-    {3, 5},   {3, 5},  {3, 5},   {3, 5},
-    {0}
-
-};
-
-// Create a string variable
-printf("%d", sizeof(days[4]));
+  ShellExecute(0, "open", "google.com", NULL, NULL, 0);
 
 }

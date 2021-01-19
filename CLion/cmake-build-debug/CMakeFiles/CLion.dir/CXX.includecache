@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CLion/main.cpp
+windows.h
+-
+ctime
+-
+string
+-
+
