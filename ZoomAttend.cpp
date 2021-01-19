@@ -1,3 +1,5 @@
+//      Author: Giovanni Bernal Ramirez     email: gvanni.bernal10@gmail.com
+
 #include <windows.h>
 #include <ctime>
 #include <string>
