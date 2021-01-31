@@ -11,7 +11,7 @@ int main(){
 
   srand(time(NULL));
 
-  for(int i = 0; i < test; i++){
+  for(int i = 0; i < sizeof(test) / sizeof(test[0]); i++){
 
     test[i] = rand() % 100;
     printf("%d\n", test[i]);

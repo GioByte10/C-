@@ -8,7 +8,7 @@ int main()
 {
     printf ("Hello World");
 
-    System("PUASE");
+    system("PUASE");
     return 0;
 
 }

@@ -1,6 +1,8 @@
 #include <time.h>
 #include <thread>
 #include <chrono>
+#include <string>
+#include <iostream>
 using namespace std;
 
 int main(){

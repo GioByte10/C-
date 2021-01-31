@@ -2,11 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 
-void main()
+int main()
 {
 char s1[] = "26/11/2006";
 char *ptr;
-int dia, mes, año;
+int dia, mes, ano;
 
 printf( "Fecha=%s\n", s1 );
 
@@ -19,7 +19,7 @@ mes = atoi(ptr);
 printf( "Mes: %d\n", mes);
 
 ptr = strtok( NULL, "/" );
-año = atoi(ptr);
-printf( "Año: %d\n", año);
+ano = atoi(ptr);
+printf( "Año: %d\n", ano);
 
 }
