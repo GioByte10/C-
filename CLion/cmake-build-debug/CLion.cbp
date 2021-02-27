@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CLion/Test.cpp">
+			<Option target="CLion"/>
+		</Unit>
 		<Unit filename="C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CLion/main.cpp">
 			<Option target="CLion"/>
 		</Unit>
