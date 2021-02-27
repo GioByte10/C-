@@ -9,9 +9,9 @@
 #define TAM 50
 using namespace std;
 
-
 int main(int argc, char *argv[])
 {
+    /*
     string; int; bool; char; long; float; double; long long;
 
     printf ("Hola");
@@ -119,5 +119,5 @@ int ndigits(long n)
     }
 
     }
-    return x;
+    return x;*/
 }

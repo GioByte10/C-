@@ -28,10 +28,6 @@ int main(){
 
     getline(read, line);
 
-    if(line != sDay){
-        reset(sDay, write);
-    }
-
     cout << line;
 
     while(true){
