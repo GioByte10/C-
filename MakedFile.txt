@@ -50,3 +50,51 @@ else if (month == 12){
    System.out.println("31");
 }
 
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("3");
+}
+
+else if (1 == 3){
+   System.out.println("3");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+
+else if (1 == ){
+   System.out.println("");
+}
+

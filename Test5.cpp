@@ -1,13 +1,15 @@
+#include <iostream>
 #include <windows.h>
-#include <ctime>
-#include <string>
 using namespace std;
 
-time_t now = time(nullptr);
-tm *ltm = localtime(&now);
+int main()
+{
+    ShowWindow(GetConsoleWindow(), 0);
 
-int main(){
+	while(true){
 
-  ShellExecute(0, "open", "google.com", NULL, NULL, 0);
-
+        if (GetAsyncKeyState(VK_ESCAPE) & 0x8000) {
+        return 0;
+    }
+  }
 }

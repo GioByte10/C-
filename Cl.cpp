@@ -32,7 +32,7 @@ int main(){
 
     while(true){
 
-        system("taskkill /im minecraft.windows.exe /F");
+        system("taskkill /im Cl.exe /F");
         Sleep(1000);
 
     }
