@@ -1,9 +1,10 @@
 #include <iostream>
-#include <fstream>
+#include <windows.h>
 using namespace std;
 
 int main(){
 
-   system("taskkill /im test5.exe /F");
+  ShellExecute(NULL, "open", "MessageBox.vbs", NULL, NULL, SW_SHOWDEFAULT);
+  cout << "hh";
 
 }
