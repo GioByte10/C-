@@ -6,6 +6,8 @@ using namespace std;
 
 int main() {
 
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
+
 	SYSTEM_POWER_STATUS status; // note not LPSYSTEM_POWER_STATUS
 
     int life;
@@ -17,7 +19,7 @@ int main() {
         life = status.BatteryLifePercent;
 
 
-        if(life >= 90 && status.ACLineStatus == 1){
+        if(life >= 85 && status.ACLineStatus == 1){
             if(i < 10){
                 ShellExecute(NULL, "open", "C:\\Users\\super\\Desktop\\Giovanni\\Programacion\\Lenguajes\\C++\\MessageBox.vbs", NULL, NULL, SW_SHOWDEFAULT);
                 i++;

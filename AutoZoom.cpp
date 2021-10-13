@@ -764,6 +764,11 @@ int main(){
             if(message && !once)
                 once = CheckIfMessage(i, hour, minute, now, ltm, vbsPath);
 
+
+                cout << hour << endl;
+                cout << minute << endl;
+                cout << IsToday(i, now, ltm) << endl;
+
             if(hour == GetTime("hour", now, ltm) && minute == GetTime("min", now, ltm) && IsToday(i, now, ltm)){
                 ShellExecute(nullptr, "open", linksS.c_str(), nullptr, nullptr, 0);
                 once = false;
@@ -775,7 +780,7 @@ int main(){
             advance(minute_i, 1);
 
         }
-        Sleep(1000);
+        Sleep(100000);
       }
   }
   return 0;
