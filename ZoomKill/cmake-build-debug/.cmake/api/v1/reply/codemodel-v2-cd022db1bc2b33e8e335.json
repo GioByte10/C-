@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ZoomKill",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "KILLzoomKiller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KILLzoomKiller-Debug-5cb921b5af6653aafb0e.json",
+					"name" : "KILLzoomKiller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZoomKill::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZoomKill-Debug-31ad570dec36b4f31c5c.json",
+					"name" : "ZoomKill",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t-Debug-36e631504000af070db3.json",
+					"name" : "t",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ZoomKill/cmake-build-debug",
+		"source" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ZoomKill"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

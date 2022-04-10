@@ -1,6 +1,6 @@
-# cmake_minimum_required(VERSION <specify CMake version here>)
+cmake_minimum_required(VERSION 3.21)
 project(CLion)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 23)
 
-add_executable(CLion main.cpp Test.cpp)
+add_executable(CLion main.cpp)

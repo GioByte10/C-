@@ -1,0 +1,5 @@
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ZoomKill/cmake-build-debug/CMakeFiles/ZoomKill.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ZoomKill/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ZoomKill/cmake-build-debug/CMakeFiles/KILLzoomKiller.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ZoomKill/cmake-build-debug/CMakeFiles/t.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ZoomKill/cmake-build-debug/CMakeFiles/edit_cache.dir
