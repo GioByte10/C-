@@ -1,0 +1,9 @@
+# ninja log v5
+0	1296	6784310397486344	CMakeFiles/GetCursorPosition.dir/main.cpp.obj	4687618e680c2e2a
+1299	1469	6784310399116007	GetCursorPosition.exe	e1fb5131e7c73cb1
+4	1230	6784310481500048	CMakeFiles/GetCursorPosition.dir/main.cpp.obj	4687618e680c2e2a
+1230	1331	6784310482411371	GetCursorPosition.exe	e1fb5131e7c73cb1
+4	1370	6784311278855382	CMakeFiles/GetCursorPosition.dir/main.cpp.obj	4687618e680c2e2a
+1370	1482	6784311279932819	GetCursorPosition.exe	e1fb5131e7c73cb1
+2	946	6784331558197871	CMakeFiles/GetCursorPosition.dir/main.cpp.obj	4687618e680c2e2a
+946	1039	6784331559164438	GetCursorPosition.exe	e1fb5131e7c73cb1
