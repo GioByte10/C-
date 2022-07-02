@@ -1,0 +1,15 @@
+# ninja log v5
+0	126	6783159283840928	CMakeFiles/GuessNumber.dir/main.cpp.obj	478e9dfcc96f639
+127	244	6783159284980414	GuessNumber.exe	3add6d09d2f8dfc3
+2	91	6783159446613042	CMakeFiles/GuessNumber.dir/main.cpp.obj	478e9dfcc96f639
+92	178	6783159447450915	GuessNumber.exe	3add6d09d2f8dfc3
+2	84	6783159663852768	CMakeFiles/GuessNumber.dir/main.cpp.obj	478e9dfcc96f639
+84	171	6783159664722035	GuessNumber.exe	3add6d09d2f8dfc3
+2	91	6783160158297131	CMakeFiles/GuessNumber.dir/main.cpp.obj	478e9dfcc96f639
+91	177	6783160159132632	GuessNumber.exe	3add6d09d2f8dfc3
+3	92	6783160333597617	CMakeFiles/GuessNumber.dir/main.cpp.obj	478e9dfcc96f639
+93	180	6783160334475335	GuessNumber.exe	3add6d09d2f8dfc3
+3	112	6783160534919730	CMakeFiles/GuessNumber.dir/main.cpp.obj	478e9dfcc96f639
+112	208	6783160535885107	GuessNumber.exe	3add6d09d2f8dfc3
+2	103	6783160686416879	CMakeFiles/GuessNumber.dir/main.cpp.obj	478e9dfcc96f639
+103	187	6783160687233711	GuessNumber.exe	3add6d09d2f8dfc3
