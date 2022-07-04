@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c873c963-002c-4124-9a0f-a39283b74011" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/BatteryWarning.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatteryWarning/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatteryWarning/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/CaesarCipher.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaesarCipher/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaesarCipher/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/Fibonacci.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/FishingCardGame.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FishingCardGame/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FishingCardGame/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battery Warning/BatteryWarning.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battery Warning/BatteryWarning.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battery Warning/BatteryWarning.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Battery Warning/MessageBox.vbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executor.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executor.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Executor.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fibonacci.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fibonacci.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fibonacci.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalGarde/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FinalGarde/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalGarde/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/FinalGarde/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalMean.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalMean.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalMean.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fishing.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fishing.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fishing.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.2" />
+  </component>
+  <component name="ProjectId" id="23UdVczurKmvhYoZsNyh4DdfiGd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c873c963-002c-4124-9a0f-a39283b74011" name="Changes" comment="" />
+      <created>1641792627323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641792627323</updated>
+      <workItem from="1641792629475" duration="682000" />
+      <workItem from="1653066378935" duration="34000" />
+      <workItem from="1653066445767" duration="14000" />
+      <workItem from="1653779633302" duration="1200000" />
+      <workItem from="1654063903459" duration="41000" />
+      <workItem from="1655441709579" duration="622000" />
+      <workItem from="1655605984070" duration="115000" />
+      <workItem from="1655606119327" duration="569000" />
+      <workItem from="1655958644035" duration="6000" />
+      <workItem from="1655958671129" duration="2479000" />
+      <workItem from="1656181183903" duration="4710000" />
+      <workItem from="1656281889347" duration="9000" />
+      <workItem from="1656281910497" duration="682000" />
+      <workItem from="1656567362466" duration="968000" />
+      <workItem from="1656569244264" duration="3222000" />
+      <workItem from="1656610852239" duration="825000" />
+      <workItem from="1656704267205" duration="3913000" />
+      <workItem from="1656730341938" duration="893000" />
+      <workItem from="1656774149756" duration="2673000" />
+      <workItem from="1656900507682" duration="733000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
