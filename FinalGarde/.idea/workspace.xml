@@ -15,30 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e02016-b99b-4314-a9d1-d0b31605c30b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FinalGarde.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GetCursorPosition/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GetCursorPosition/.idea/GetCursorPosition.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GetCursorPosition/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GetCursorPosition/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GetCursorPosition/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GetCursorPosition/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GetCursorPosition/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FinalMean.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../FinalMean.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Functions.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Functions.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Functions.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GetCursor.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GetCursor.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GetCursor.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,21 +40,25 @@
   </component>
   <component name="ProjectId" id="2BMz130LcVhTeJPU43UggjYDRgR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="FinalGarde" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FinalGarde" TARGET_NAME="FinalGarde" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FinalGarde" RUN_TARGET_NAME="FinalGarde">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinalGarde" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FinalGarde" TARGET_NAME="FinalGarde" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FinalGarde" RUN_TARGET_NAME="FinalGarde">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -91,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656730523425</updated>
       <workItem from="1656730525168" duration="1101000" />
+      <workItem from="1656774089091" duration="50000" />
     </task>
     <servers />
   </component>

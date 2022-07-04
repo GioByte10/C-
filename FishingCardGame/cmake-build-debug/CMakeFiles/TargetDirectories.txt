@@ -1,0 +1,3 @@
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/FishingCardGame/cmake-build-debug/CMakeFiles/FishingCardGame.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/FishingCardGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/FishingCardGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
