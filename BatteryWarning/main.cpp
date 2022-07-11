@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 
-    //ShowWindow(GetConsoleWindow(), SW_HIDE);
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
     SYSTEM_POWER_STATUS status;         // note not LPSYSTEM_POWER_STATUS
 
     ifstream info;

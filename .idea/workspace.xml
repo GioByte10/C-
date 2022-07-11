@@ -13,8 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c873c963-002c-4124-9a0f-a39283b74011" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/BatteryWarning.exe" beforeDir="false" afterPath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/BatteryWarning.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/CMakeFiles/BatteryWarning.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/CMakeFiles/BatteryWarning.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/BatteryWarning/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatteryWarning/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BatteryWarning/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +49,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/BatteryWarning",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -93,6 +100,8 @@
       <workItem from="1657504215702" duration="333000" />
       <workItem from="1657504690717" duration="37000" />
       <workItem from="1657505675371" duration="8000" />
+      <workItem from="1657522720655" duration="27000" />
+      <workItem from="1657522761139" duration="151000" />
     </task>
     <servers />
   </component>
