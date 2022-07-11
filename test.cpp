@@ -17,12 +17,9 @@ int main() {
 
     info.open("info.txt");
 
-    if(info.fail()){
-        MessageBox(nullptr, "info.txt did not open", "Error", MB_ICONHAND);
-        exit(1);
-    }
 
     getline(info, path);
+    cout << path << endl;
     info.close();
 
     while(true){
