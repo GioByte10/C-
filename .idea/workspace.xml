@@ -13,54 +13,109 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c873c963-002c-4124-9a0f-a39283b74011" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/BatteryWarning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatteryWarning/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatteryWarning/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatteryWarning/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/CaesarCipher.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaesarCipher/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaesarCipher/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaesarCipher/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/Fibonacci.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fibonacci/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fibonacci/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fibonacci/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/FishingCardGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FishingCardGame/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FishingCardGame/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FishingCardGame/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crapsgame/.idea/Crapsgame.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crapsgame/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crapsgame/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crapsgame/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crapsgame/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crapsgame/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crapsgame/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battery Warning/BatteryWarning.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battery Warning/BatteryWarning.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battery Warning/BatteryWarning.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battery Warning/MessageBox.vbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Executor.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Executor.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Executor.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fibonacci.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fibonacci.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fibonacci.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalGarde/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FinalGarde/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalGarde/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/FinalGarde/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalMean.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalMean.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalMean.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fishing.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fishing.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fishing.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/.idea/CaesarCipher.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/reply/cache-v2-326e97154aa293dfec63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-47dc4a1a141ccf48b737.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-70c5861e1ffde3330693.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-02T17-37-09-0176.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/reply/target-CaesarCipher-Debug-3d1667624d36bd129c8d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-c751d4b9bb09828cc933.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/CaesarCipher.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/CaesarCipher.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaesarCipher/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crash.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crash.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crash.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrazyBoard.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSync.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSyncUSBtoCOMPUTER.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSyncUSBtoCOMPUTER.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSyncUSBtoCOMPUTER.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b704f4bace1b0c83bfd3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-df58373d2f4a52fe8461.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/.cmake/api/v1/reply/index-2022-03-15T02-23-27-0102.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-0e97fde01f6261ac6a38.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/Donut.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/Donut.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/Donut.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/Donut.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Donut/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Donut/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Encoder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Encoder.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Encoder.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncoderM.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncoderM.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncoderM.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileMaker.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileMaker.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileMaker.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsdsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.o" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +184,8 @@
       <workItem from="1656730341938" duration="893000" />
       <workItem from="1656774149756" duration="2673000" />
       <workItem from="1656900507682" duration="733000" />
+      <workItem from="1657504215702" duration="333000" />
+      <workItem from="1657504690717" duration="37000" />
     </task>
     <servers />
   </component>

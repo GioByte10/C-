@@ -1,0 +1,3 @@
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ConsoleColors/cmake-build-debug/CMakeFiles/ConsoleColors.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ConsoleColors/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ConsoleColors/cmake-build-debug/CMakeFiles/rebuild_cache.dir
