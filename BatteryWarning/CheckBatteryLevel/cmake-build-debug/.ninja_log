@@ -1,0 +1,14 @@
+# ninja log v5
+3165	3383	6800506796143351	CheckBatteryLevel.exe	fc0497963cff658e
+1	3159	6800506793986368	CMakeFiles/CheckBatteryLevel.dir/main.cpp.obj	edb42896cc6b3f23
+28	618	6800636495896212	build.ninja	54e4bb38e104f991
+1	3068	6800638062276682	CMakeFiles/test.dir/test.cpp.obj	c153421aa145f5da
+3069	3424	6800638065785518	test.exe	ea4ccc1fefbc7fd
+6	2872	6800638241562073	CMakeFiles/test.dir/test.cpp.obj	c153421aa145f5da
+2873	3027	6800638243063000	test.exe	ea4ccc1fefbc7fd
+5	3425	6800642270476682	CMakeFiles/test.dir/test.cpp.obj	c153421aa145f5da
+3426	3628	6800642272450474	test.exe	ea4ccc1fefbc7fd
+6	2867	6800642770015711	CMakeFiles/test.dir/test.cpp.obj	c153421aa145f5da
+2874	3032	6800642771630420	test.exe	ea4ccc1fefbc7fd
+3	1258	6800650138035803	CMakeFiles/CheckBatteryLevel.dir/main.cpp.obj	edb42896cc6b3f23
+1258	1366	6800650139064681	CheckBatteryLevel.exe	fc0497963cff658e

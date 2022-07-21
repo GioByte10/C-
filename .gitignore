@@ -8,4 +8,4 @@
 /dataSources.local.xml
 
 # Custom
-/BatteryWarning/cmake-build-debug/info.txt
+/BatteryWarning/CheckBatteryLevel/cmake-build-debug/info.txt
