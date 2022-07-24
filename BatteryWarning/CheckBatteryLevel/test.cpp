@@ -1,38 +1,8 @@
 #include <iostream>
-#include <string>
-#include "Windows.h"
-#include <fstream>
-using namespace std;
 
-
-
-
-int main() {
-
-    SYSTEM_POWER_STATUS status;
-
-    ifstream info;
-    string path;
-
-    LPCSTR life;
-    int i = 0;
-
-    info.open("info.txt");
-
-    if(info.fail()){
-        MessageBox(nullptr, "info.txt did not open", "Error", MB_ICONHAND);
-        exit(1);
+int main(int argc, char** argv) {
+    std::cout << "Have " << argc << " arguments:" << std::endl;
+    for (int i = 0; i < argc; ++i) {
+        std::cout << argv[i] << std::endl;
     }
-
-    getline(info, path);
-    info.close();
-
-
-
-        GetSystemPowerStatus(&status);
-        life = to_string(status.BatteryLifePercent).c_str();
-
-
-        ShellExecute(nullptr, "open", path.c_str(), life, nullptr, SW_SHOWDEFAULT);
-
 }

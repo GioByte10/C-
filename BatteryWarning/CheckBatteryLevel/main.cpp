@@ -2,6 +2,8 @@
 #include <string>
 #include "Windows.h"
 #include <fstream>
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "EndlessLoop"
 using namespace std;
 
 bool checkAlreadyExists(LPCSTR value){
@@ -16,11 +18,9 @@ bool checkAlreadyExists(LPCSTR value){
     return false;
 }
 
-void addToStartUp(LPCSTR value){
+void addToStartUp(LPCSTR value, TCHAR *filePath){
 
     HKEY newKey;
-    TCHAR filePath[MAX_PATH];
-    GetModuleFileName(nullptr, filePath, MAX_PATH);
 
     RegOpenKey(HKEY_CURRENT_USER, R"(Software\Microsoft\Windows\CurrentVersion\Run)", &newKey);
     LONG result = RegSetValueEx(newKey, value, 0, REG_SZ, (LPBYTE)filePath, sizeof(filePath));
@@ -38,23 +38,43 @@ int main() {
     SYSTEM_POWER_STATUS status;                                 // note not LPSYSTEM_POWER_STATUS
     LPCSTR value = "BatteryWarning";
 
-    ifstream info;
-    string path, max;
+    TCHAR filePath[MAX_PATH];
+    GetModuleFileName(nullptr, filePath, MAX_PATH);
 
-    int life, i = 0;
+    ifstream info;
+    string infoPath, notificationPath, max;
+
+    int life, i;
 
     if(checkAlreadyExists(value) == 0){
-        addToStartUp(value);
+        addToStartUp(value, filePath);
     }
 
-    info.open("info.txt");
+    for(i = lstrlen(filePath); i >= 0; i--){
+        if(filePath[i] == '\\'){
+            break;
+        }
+    }
+
+    for(int j = 0; j < i; j++){
+        infoPath += filePath[j];
+
+        if(filePath[j] == '\\')
+            infoPath += '\\';
+    }
+
+    i = 0;
+
+    infoPath += "\\info.txt";
+    info.open(infoPath);
+
 
     if(info.fail()){
         MessageBox(nullptr, "info.txt did not open", "Error", MB_ICONERROR);
         exit(1);
     }
 
-    getline(info, path);
+    getline(info, notificationPath);
     getline(info, max);
     info.close();
 
@@ -65,7 +85,7 @@ int main() {
 
         if(life >= stoi(max) && status.ACLineStatus == 1){
             if(i < 10){
-                ShellExecute(nullptr, "open", path.c_str(), to_string(life).c_str(), nullptr, SW_SHOWDEFAULT);
+                ShellExecute(nullptr, "open", notificationPath.c_str(), to_string(life).c_str(), nullptr, SW_SHOWDEFAULT);
                 i++;
                 Sleep(60000);
             }
@@ -76,3 +96,5 @@ int main() {
         Sleep(60000);
     }
 }
+
+#pragma clang diagnostic pop
