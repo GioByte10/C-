@@ -1,0 +1,6 @@
+# ninja log v5
+10	3520	6808645781739409	CMakeFiles/CReminders.dir/main.cpp.obj	cbe5d362a8b813ce
+1	150	6808646019981440	build.ninja	25b406bed93e4e78
+3521	3746	6808645783977517	CReminders.exe	6a710e9fef729161
+6	2668	6808237882046553	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2669	2822	6808237883548310	test.exe	ea4ccc1fefbc7fd

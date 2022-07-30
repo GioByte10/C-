@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HammingCode_15_11_",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HammingCode_15_11_::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HammingCode_15_11_-Debug-3b9ed30f772a0915c383.json",
+					"name" : "HammingCode_15_11_",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HammingCode(15,11)/cmake-build-debug",
+		"source" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HammingCode(15,11)"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

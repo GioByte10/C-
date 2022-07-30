@@ -1,0 +1,27 @@
+# ninja log v5
+1	2818	6806862268421977	CMakeFiles/Reminders.dir/main.cpp.obj	5d21273a8453bbc8
+2824	3015	6806862270311544	Reminders.exe	a78bd12615ebd791
+0	3132	6807396256167081	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+3133	3315	6807396257907989	test.exe	ea4ccc1fefbc7fd
+5	2884	6807396618808235	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2885	3043	6807396620340182	test.exe	ea4ccc1fefbc7fd
+6	2740	6807396906058114	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2740	2892	6807396907577202	test.exe	ea4ccc1fefbc7fd
+9	2741	6807397102008143	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2742	2911	6807397103668376	test.exe	ea4ccc1fefbc7fd
+6	2658	6807397183913118	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2659	2811	6807397185366148	test.exe	ea4ccc1fefbc7fd
+5	2548	6807397629947624	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2549	2706	6807397631480158	test.exe	ea4ccc1fefbc7fd
+7	3149	6807398802070825	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+3150	3312	6807398803598876	test.exe	ea4ccc1fefbc7fd
+7	2711	6807399010904958	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2711	2870	6807399012392448	test.exe	ea4ccc1fefbc7fd
+6	2711	6807399092304248	CMakeFiles/test.dir/test.cpp.obj	f6bfe13beebb24f6
+2712	2872	6807399093862584	test.exe	ea4ccc1fefbc7fd
+9	3285	6807486577959193	CMakeFiles/Reminders.dir/main.cpp.obj	5d21273a8453bbc8
+3286	3452	6807486579490186	Reminders.exe	a78bd12615ebd791
+7	3175	6807486859638793	CMakeFiles/Reminders.dir/main.cpp.obj	5d21273a8453bbc8
+3176	3331	6807486861130175	Reminders.exe	a78bd12615ebd791
+7	2859	6807487186524001	CMakeFiles/Reminders.dir/main.cpp.obj	5d21273a8453bbc8
+2859	3016	6807487187996756	Reminders.exe	a78bd12615ebd791

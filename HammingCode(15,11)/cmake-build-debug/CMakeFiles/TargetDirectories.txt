@@ -1,0 +1,3 @@
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HammingCode(15,11)/cmake-build-debug/CMakeFiles/HammingCode_15_11_.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HammingCode(15,11)/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HammingCode(15,11)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
