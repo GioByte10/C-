@@ -1,14 +1,15 @@
-#include <iostream>
+#include <list>
 #include <windows.h>
+#include <vector>
 
+int main(){
 
+    std::vector<int> g1;
 
-int main() {
+    for (int i = 1; i <= 5; i++)
+        g1.push_back(i);
 
-    int n;
-    std::cin >> n;
-
-    int foo[n];
+    Sleep(10000);
 
     return 0;
 }

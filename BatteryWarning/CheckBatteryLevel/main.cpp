@@ -23,7 +23,8 @@ void addToStartUp(LPCSTR value, TCHAR *filePath){
     HKEY newKey;
 
     RegOpenKey(HKEY_CURRENT_USER, R"(Software\Microsoft\Windows\CurrentVersion\Run)", &newKey);
-    LONG result = RegSetValueEx(newKey, value, 0, REG_SZ, (LPBYTE)filePath, sizeof(filePath));
+    std::cout << filePath << ' ' << sizeof(filePath) <<  std::endl;
+    LONG result = RegSetValueEx(newKey, value, 0, REG_SZ, (LPBYTE)filePath, lstrlen(filePath));
     RegCloseKey(newKey);
 
     if(result != ERROR_SUCCESS){

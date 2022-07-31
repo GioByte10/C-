@@ -1,11 +1,8 @@
-#include "Windows.h"
+#include <windows.h>
 #include <iostream>
 #include <list>
 #include <fstream>
-#include <string>
-
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "EndlessLoop"
+#include <ctime>
 
 bool checkAlreadyExists(LPCSTR value){
 
@@ -24,7 +21,7 @@ void addToStartUp(LPCSTR value, TCHAR *filePath){
     HKEY newKey;
 
     RegOpenKey(HKEY_CURRENT_USER, R"(Software\Microsoft\Windows\CurrentVersion\Run)", &newKey);
-    LONG result = RegSetValueEx(newKey, value, 0, REG_SZ, (LPBYTE)filePath, sizeof(filePath));
+    LONG result = RegSetValueEx(newKey, value, 0, REG_SZ, (LPBYTE)filePath, lstrlen(filePath));
     RegCloseKey(newKey);
 
     if(result != ERROR_SUCCESS){
@@ -205,7 +202,7 @@ void getInformation(const std::string& infoPath, std::list<std::string> *notific
 
 int main() {
 
-    //ShowWindow(GetConsoleWindow(), SW_HIDE);
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
     LPCSTR value = "CReminders";
     std::string infoPath, notificationPath;
 
@@ -215,16 +212,14 @@ int main() {
     std::list <int>             minute_list;
 
     std::string                 notificationContent;
-    std::string                 days;
     int                         hour;
     int                         minute;
 
     TCHAR filePath[MAX_PATH];
     GetModuleFileName(nullptr, filePath, MAX_PATH);
 
-    if(checkAlreadyExists(value) == 0){
+    if(!checkAlreadyExists(value))
         addToStartUp(value, filePath);
-    }
 
     time_t now = time(nullptr);
     tm *ltm = localtime(&now);
@@ -251,7 +246,7 @@ int main() {
     auto hour_i                     = hour_list.begin();
     auto minute_i                   = minute_list.begin();
 
-    while(true) {
+    while(true){
 
         notificationContent_i   = notificationContent_list.begin();
         hour_i                  = hour_list.begin();
@@ -270,12 +265,7 @@ int main() {
             std::advance(notificationContent_i, 1);
             std::advance(hour_i, 1);
             std::advance(minute_i, 1);
-
-            Sleep(50000);
         }
+        Sleep(50000);
     }
-
-    return 0;
 }
-
-#pragma clang diagnostic pop

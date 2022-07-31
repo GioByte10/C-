@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "CReminders",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CReminders::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CReminders-Debug-d6dc4c54cac076d967c7.json",
+					"jsonFile" : "target-CReminders-Debug-3ffd4d115bb47683bc8b.json",
 					"name" : "CReminders",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-32e90f86bbaa8ef4d2a2.json",
+					"name" : "test",
 					"projectIndex" : 0
 				}
 			]
@@ -55,6 +64,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 4
 	}
 }
