@@ -2,6 +2,7 @@
 /shelf/
 /workspace.xml
 **/info.txt
+
 # Editor-based HTTP Client requests
 /httpRequests/
 # Datasource local storage ignored files
@@ -9,4 +10,4 @@
 /dataSources.local.xml
 
 # Custom
-/BatteryWarning/CheckBatteryLevel/cmake-build-debug/info.txt
+/Notes

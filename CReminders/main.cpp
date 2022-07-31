@@ -2,7 +2,6 @@
 #include <iostream>
 #include <list>
 #include <fstream>
-#include <ctime>
 
 bool checkAlreadyExists(LPCSTR value){
 
@@ -25,7 +24,7 @@ void addToStartUp(LPCSTR value, TCHAR *filePath){
     RegCloseKey(newKey);
 
     if(result != ERROR_SUCCESS){
-        MessageBox(nullptr, "Could not add to startup", "Error", MB_ICONERROR);
+        MessageBox(nullptr, "Could not add to startup", "Error 0x00", MB_ICONERROR);
         exit(1);
     }
 }
@@ -52,8 +51,6 @@ std::string intDayToStringDay(int intDay){
 
     else if(intDay == 0)
         return "sunday";
-
-    return "error";
 
 }
 
@@ -106,10 +103,9 @@ std::string getDirectoryPath(TCHAR *filePath, int steps){
     std::string directoryPath;
 
     for(int step = 0; step < steps; step++) {
-        for (; i >= 0; i--) {
+        for (; i >= 0; i--)
             if (filePath[i] == '\\')
                 break;
-        }
         i--;
     }
 
@@ -125,6 +121,21 @@ std::string getDirectoryPath(TCHAR *filePath, int steps){
     return directoryPath;
 }
 
+std::string patchSpaces(const std::string& line, char r){
+
+        std::string newLine;
+
+        for(char c : line){
+            if(c == ' ')
+                newLine += r;
+            else
+                newLine += c;
+        }
+
+        return newLine;
+
+}
+
 std::string getLineInformation(const std::string& line){
 
     int i;
@@ -138,13 +149,19 @@ std::string getLineInformation(const std::string& line){
         if(line[i] != ' ')
             break;
 
-    //std::cout << line.substr(i, line.length() - 1) << std::endl;
-    return line.substr(i, line.length() - 1);
+    return patchSpaces(line.substr(i, line.length() - 1), '~');
 }
 
-void getTimeInformation(const std::string& time, std::list <int> *hour_list, std::list <int> *minute_list){
-    hour_list->emplace_back     (stoi(time.substr(0,2)));
-    minute_list->emplace_back   (stoi(time.substr(3,5)));
+void getTimeInformation(const std::string& timeString, std::list <int> *hour_list, std::list <int> *minute_list){
+    
+    int i;
+    
+    for(i = 0; i < timeString.length(); i++)
+        if(timeString[i] == ':')
+            break;
+    
+    hour_list->emplace_back     (stoi(timeString.substr(0,i)));
+    minute_list->emplace_back   (stoi(timeString.substr(i + 1, timeString.length())));
 }
 
 void getInformation(const std::string& infoPath, std::list<std::string> *notificationContent_list, std::list<std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list){
@@ -158,15 +175,21 @@ void getInformation(const std::string& infoPath, std::list<std::string> *notific
     info.open(infoPath);
 
     if(info.fail()){
-        MessageBox(nullptr, "info.txt did not open", "Error", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt did not open", "Error 0x01", MB_ICONERROR);
         exit(1);
     }
 
     for(i = 0; getline(info, line); i++);
-    i--;
 
     info.clear();
     info.seekg(0);
+
+    i--;
+
+    if(i % (linesPerBlock + 1) != 0){
+        MessageBox(nullptr, "info.txt is not correctly formatted", "Error 0x02", MB_ICONERROR);
+        exit(1);
+    }
 
     nBlocks = i/(linesPerBlock + 1);
     std::string lines[nBlocks * linesPerBlock];
@@ -174,12 +197,12 @@ void getInformation(const std::string& infoPath, std::list<std::string> *notific
     for(int j = 0; j < nBlocks * linesPerBlock; j++){
         getline(info, line);
 
-        if(line.find("----------") != std::string::npos) {
+        if(line.find("----------") != std::string::npos)
             j--;
 
-        }else{
+        else
             lines[j] = getLineInformation(line);
-        }
+
     }
 
     info.close();
@@ -187,10 +210,10 @@ void getInformation(const std::string& infoPath, std::list<std::string> *notific
     for(int  j = 0; j < nBlocks; j++){
         line = "";
 
-        if(lines[j * linesPerBlock] == "y"){
+        if(lines[j * linesPerBlock].find('y') != std::string::npos || lines[j * linesPerBlock].find('Y') != std::string::npos){
             line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock];
 
-            if(lines[4 + j * linesPerBlock] == "y")
+            if(lines[4 + j * linesPerBlock].find('y') != std::string::npos || lines[4 + j * linesPerBlock].find('Y') != std::string::npos)
                 line += ' ' + lines[5 + j * linesPerBlock] + ' ' + lines[6 + j * linesPerBlock];
 
             notificationContent_list->emplace_back(line);
@@ -225,7 +248,7 @@ int main() {
     tm *ltm = localtime(&now);
 
     infoPath = getDirectoryPath(filePath, 1) + "\\info.txt";
-    notificationPath = getDirectoryPath(filePath, 2) + R"(\ToastNotification\dist\main.exe)";
+    notificationPath = getDirectoryPath(filePath, 1) + R"(\ToastNotification\dist\main.exe)";
     getInformation(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list);
 
     /*
@@ -242,7 +265,7 @@ int main() {
         std::cout << l << std::endl;
     */
 
-    auto notificationContent_i    = notificationContent_list.begin();
+    auto notificationContent_i      = notificationContent_list.begin();
     auto hour_i                     = hour_list.begin();
     auto minute_i                   = minute_list.begin();
 

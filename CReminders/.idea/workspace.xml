@@ -19,45 +19,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="174f36c7-dec9-49d4-8144-b66aed332f6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/CMakeFiles/CheckBatteryLevel.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/CMakeFiles/CheckBatteryLevel.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/CheckBatteryLevel.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/CheckBatteryLevel.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../BatteryWarning/CheckBatteryLevel/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6ed194fbcfbb76143d87.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-b981a4a7b856d9011e69.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-cd656d2c20b182ca24d3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-30T06-10-02-0166.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-CReminders-Debug-d6dc4c54cac076d967c7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-c751d4b9bb09828cc933.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/ToastNotification.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Analysis-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/EXE-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/PKG-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/PYZ-00.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/PYZ-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Tree-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Tree-01.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Tree-02.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/main.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/main.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/warn-main.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/xref-main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/dist/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/main.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToastNotification/test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CReminders.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CReminders.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CReminders.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CReminders.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/idea.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
@@ -103,13 +97,8 @@
       <recent name="C:\Users\super\Desktop\Giovanni\Programacion\Lenguajes\C++\CReminders\cmake-build-debug" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.CReminders">
+  <component name="RunManager" selected="CMake Application.test">
     <configuration name="CReminders" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CReminders" TARGET_NAME="CReminders" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CReminders" RUN_TARGET_NAME="CReminders">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -136,7 +125,8 @@
       <workItem from="1659163386492" duration="2704000" />
       <workItem from="1659212831330" duration="1438000" />
       <workItem from="1659217761218" duration="2041000" />
-      <workItem from="1659225532555" duration="9680000" />
+      <workItem from="1659225532555" duration="12120000" />
+      <workItem from="1659285237615" duration="7971000" />
     </task>
     <servers />
   </component>
