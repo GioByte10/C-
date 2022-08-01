@@ -21,36 +21,9 @@
     <list default="true" id="174f36c7-dec9-49d4-8144-b66aed332f6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/ToastNotification.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Analysis-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/EXE-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/PKG-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/PYZ-00.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/PYZ-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Tree-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Tree-01.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/Tree-02.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/main.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/main.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/warn-main.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/build/main/xref-main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/dist/main.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/main.spec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToastNotification/test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CReminders.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CReminders.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CReminders.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CReminders.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -82,22 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\super\Desktop\Giovanni\Programacion\Lenguajes\C++\CReminders" />
       <recent name="C:\Users\super\Desktop\Giovanni\Programacion\Lenguajes\C++\CReminders\cmake-build-debug" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.test">
+  <component name="RunManager" selected="CMake Application.CReminders">
     <configuration name="CReminders" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CReminders" TARGET_NAME="CReminders" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CReminders" RUN_TARGET_NAME="CReminders">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -127,6 +101,7 @@
       <workItem from="1659217761218" duration="2041000" />
       <workItem from="1659225532555" duration="12120000" />
       <workItem from="1659285237615" duration="7971000" />
+      <workItem from="1659313883398" duration="5074000" />
     </task>
     <servers />
   </component>
@@ -143,5 +118,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

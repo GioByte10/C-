@@ -15,7 +15,7 @@ bool checkAlreadyExists(LPCSTR value){
     return false;
 }
 
-void addToStartUp(LPCSTR value, TCHAR *filePath){
+void addToRegistry(LPCSTR value, TCHAR *filePath){
 
     HKEY newKey;
 
@@ -136,6 +136,16 @@ std::string patchSpaces(const std::string& line, char r){
 
 }
 
+bool findChars(const std::string &line, const std::string &chars){
+
+    for(char c : chars)
+        if (line.find(c) != std::string::npos)
+            return true;
+
+    return false;
+
+}
+
 std::string getLineInformation(const std::string& line){
 
     int i;
@@ -210,10 +220,10 @@ void getInformation(const std::string& infoPath, std::list<std::string> *notific
     for(int  j = 0; j < nBlocks; j++){
         line = "";
 
-        if(lines[j * linesPerBlock].find('y') != std::string::npos || lines[j * linesPerBlock].find('Y') != std::string::npos){
+        if(findChars(lines[j * linesPerBlock], "yYsS")){
             line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock];
 
-            if(lines[4 + j * linesPerBlock].find('y') != std::string::npos || lines[4 + j * linesPerBlock].find('Y') != std::string::npos)
+            if(findChars(lines[4 + j * linesPerBlock], "yYsS"))
                 line += ' ' + lines[5 + j * linesPerBlock] + ' ' + lines[6 + j * linesPerBlock];
 
             notificationContent_list->emplace_back(line);
@@ -242,7 +252,7 @@ int main() {
     GetModuleFileName(nullptr, filePath, MAX_PATH);
 
     if(!checkAlreadyExists(value))
-        addToStartUp(value, filePath);
+        addToRegistry(value, filePath);
 
     time_t now = time(nullptr);
     tm *ltm = localtime(&now);
@@ -282,7 +292,7 @@ int main() {
 
             if(minute == getCurrentTime("min", now, ltm) && hour == getCurrentTime("hour", now, ltm) && isToday(i, now, ltm, &days_list)){
                 ShellExecuteA(nullptr, "open", notificationPath.c_str(), notificationContent.c_str(), nullptr, 0);
-                Sleep(60000);
+                Sleep(20000);
             }
 
             std::advance(notificationContent_i, 1);

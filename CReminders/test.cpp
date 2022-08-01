@@ -1,51 +1,26 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-#include <functional>
-#include <windows.h>
+#include <algorithm>
 
-static bool stop = false;
+bool findChars(const std::string &line, const std::string &chars){
 
-void doWorkDetached(){
+    if(std::ranges::any_of(line, [chars](char c){
+        return chars.find(c) != std::string::npos;
+    }))
 
-    std::cout << "Doing detached work" << std::endl;
-    Sleep(1000);
-
-    std::cout << "Doing detached work" << std::endl;
-    Sleep(1000);
-
-    std::cout << "Doing detached work" << std::endl;
-    Sleep(1000);
+    return false;
 
 }
 
-void loadingScreen(){
 
-    std::cout << "Loading program";
-    while(!stop){
-        std::cout << '.';
-        Sleep(1000);
-    }
-    std::cout << std::endl;
-}
-
-int main(){
-
-    std::thread t1(loadingScreen);
-
-    std::cin.get();
-    stop = true;
-
-    t1.join();
-
-    std::thread t2(doWorkDetached);
-    t2.detach();
-
-    Sleep(500);
-
-    std::cout<< "printing from main" << std::endl;
-
-    Sleep(3000);
-
+int main() {
+    std::string line;
+    std::string chars;
+    std::cout << "Enter a line: ";
+    std::getline(std::cin, line);
+    std::cout << "Enter a string of characters: ";
+    std::getline(std::cin, chars);
+    std::cout << "The line contains the characters: " << findChars(line, chars) << std::endl;
     return 0;
 }
