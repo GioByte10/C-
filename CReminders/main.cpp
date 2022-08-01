@@ -54,7 +54,7 @@ std::string intDayToStringDay(int intDay){
 
 }
 
-int getCurrentTime(const std::string& arg, time_t now, tm *ltm){
+int getCurrentTime(const std::string &arg, time_t now, tm *ltm){
 
     now = time(nullptr);
     localtime(&now);
@@ -121,7 +121,7 @@ std::string getDirectoryPath(TCHAR *filePath, int steps){
     return directoryPath;
 }
 
-std::string patchSpaces(const std::string& line, char r){
+std::string patchSpaces(const std::string &line, char r){
 
         std::string newLine;
 
@@ -146,13 +146,15 @@ bool findChars(const std::string &line, const std::string &chars){
 
 }
 
-std::string getLineInformation(const std::string& line){
+std::string getLineInformation(const std::string &line){
 
-    int i;
+    int i = line.find(':');
 
-    for(i = 0; i < line.length(); i++)
-        if(line[i] == ':')
-            break;
+    if(i == std::string::npos){
+        MessageBox(nullptr, "Could not add to startup", "Error 0x01", MB_ICONERROR);
+        exit(1);
+    }
+
     i++;
 
     for(; i < line.length(); i++)
@@ -162,19 +164,20 @@ std::string getLineInformation(const std::string& line){
     return patchSpaces(line.substr(i, line.length() - 1), '~');
 }
 
-void getTimeInformation(const std::string& timeString, std::list <int> *hour_list, std::list <int> *minute_list){
+void getTimeInformation(const std::string &timeString, std::list <int> *hour_list, std::list <int> *minute_list){
     
-    int i;
-    
-    for(i = 0; i < timeString.length(); i++)
-        if(timeString[i] == ':')
-            break;
+    int i = timeString.find(':');
+
+    if(i == std::string::npos){
+        MessageBox(nullptr, "Could not add to startup", "Error 0x02", MB_ICONERROR);
+        exit(1);
+    }
     
     hour_list->emplace_back     (stoi(timeString.substr(0,i)));
     minute_list->emplace_back   (stoi(timeString.substr(i + 1, timeString.length())));
 }
 
-void getInformation(const std::string& infoPath, std::list<std::string> *notificationContent_list, std::list<std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list){
+void getInformation(const std::string &infoPath, std::list<std::string> *notificationContent_list, std::list<std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list){
 
     std::ifstream info;
     std::string line;
@@ -185,7 +188,7 @@ void getInformation(const std::string& infoPath, std::list<std::string> *notific
     info.open(infoPath);
 
     if(info.fail()){
-        MessageBox(nullptr, "info.txt did not open", "Error 0x01", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt did not open", "Error 0x02", MB_ICONERROR);
         exit(1);
     }
 
@@ -197,7 +200,7 @@ void getInformation(const std::string& infoPath, std::list<std::string> *notific
     i--;
 
     if(i % (linesPerBlock + 1) != 0){
-        MessageBox(nullptr, "info.txt is not correctly formatted", "Error 0x02", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is not correctly formatted", "Error 0x03", MB_ICONERROR);
         exit(1);
     }
 

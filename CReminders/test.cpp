@@ -3,24 +3,17 @@
 #include <thread>
 #include <algorithm>
 
-bool findChars(const std::string &line, const std::string &chars){
-
-    if(std::ranges::any_of(line, [chars](char c){
-        return chars.find(c) != std::string::npos;
-    }))
-
-    return false;
-
+void assignValue(int *x){
+    *x = 8;
 }
 
-
 int main() {
-    std::string line;
-    std::string chars;
-    std::cout << "Enter a line: ";
-    std::getline(std::cin, line);
-    std::cout << "Enter a string of characters: ";
-    std::getline(std::cin, chars);
-    std::cout << "The line contains the characters: " << findChars(line, chars) << std::endl;
+
+    int x = 9;
+
+    std::cout << "x = " << x << std::endl;
+    assignValue(&x);
+    std::cout << "x = " << x << std::endl;
+
     return 0;
 }
