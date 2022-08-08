@@ -106,6 +106,105 @@ build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.cpp.o
   TARGET_IMPLIB = libtest.dll.a
   TARGET_PDB = test.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test2
+
+
+#############################################
+# Order-only phony target for test2
+
+build cmake_object_order_depends_target_test2: phony || CMakeFiles/test2.dir
+
+build CMakeFiles/test2.dir/test2.cpp.obj: CXX_COMPILER__test2_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/test2.cpp || cmake_object_order_depends_target_test2
+  DEP_FILE = CMakeFiles\test2.dir\test2.cpp.obj.d
+  FLAGS = -static -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\test2.dir
+  OBJECT_FILE_DIR = CMakeFiles\test2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test2
+
+
+#############################################
+# Link the executable test2.exe
+
+build test2.exe: CXX_EXECUTABLE_LINKER__test2_Debug CMakeFiles/test2.dir/test2.cpp.obj
+  FLAGS = -static -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test2.exe
+  TARGET_IMPLIB = libtest2.dll.a
+  TARGET_PDB = test2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test3
+
+
+#############################################
+# Order-only phony target for test3
+
+build cmake_object_order_depends_target_test3: phony || CMakeFiles/test3.dir
+
+build CMakeFiles/test3.dir/test3.cpp.obj: CXX_COMPILER__test3_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/test3.cpp || cmake_object_order_depends_target_test3
+  DEP_FILE = CMakeFiles\test3.dir\test3.cpp.obj.d
+  FLAGS = -static -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\test3.dir
+  OBJECT_FILE_DIR = CMakeFiles\test3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test3
+
+
+#############################################
+# Link the executable test3.exe
+
+build test3.exe: CXX_EXECUTABLE_LINKER__test3_Debug CMakeFiles/test3.dir/test3.cpp.obj
+  FLAGS = -static -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test3.exe
+  TARGET_IMPLIB = libtest3.dll.a
+  TARGET_PDB = test3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test4
+
+
+#############################################
+# Order-only phony target for test4
+
+build cmake_object_order_depends_target_test4: phony || CMakeFiles/test4.dir
+
+build CMakeFiles/test4.dir/test4.cpp.obj: CXX_COMPILER__test4_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/test4.cpp || cmake_object_order_depends_target_test4
+  DEP_FILE = CMakeFiles\test4.dir\test4.cpp.obj.d
+  FLAGS = -static -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\test4.dir
+  OBJECT_FILE_DIR = CMakeFiles\test4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test4
+
+
+#############################################
+# Link the executable test4.exe
+
+build test4.exe: CXX_EXECUTABLE_LINKER__test4_Debug CMakeFiles/test4.dir/test4.cpp.obj
+  FLAGS = -static -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test4.exe
+  TARGET_IMPLIB = libtest4.dll.a
+  TARGET_PDB = test4.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +235,12 @@ build CReminders: phony CReminders.exe
 
 build test: phony test.exe
 
+build test2: phony test2.exe
+
+build test3: phony test3.exe
+
+build test4: phony test4.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +249,7 @@ build test: phony test.exe
 #############################################
 # Folder: C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-debug
 
-build all: phony CReminders.exe test.exe
+build all: phony CReminders.exe test.exe test2.exe test3.exe test4.exe
 
 # =============================================================================
 # Built-in targets

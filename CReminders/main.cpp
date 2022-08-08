@@ -52,6 +52,8 @@ std::string intDayToStringDay(int intDay){
     else if(intDay == 0)
         return "sunday";
 
+    return "";
+
 }
 
 int getCurrentTime(const std::string &arg, time_t now, tm *ltm){
@@ -89,7 +91,7 @@ bool isToday(int i, time_t now, tm *ltm, std::list<std::string> *days_list){
     auto days_i = days_list -> begin();
     advance(days_i, i);
 
-    std::string days = *days_i;
+    const std::string days = *days_i;
 
     if(days == "everyday" || days.find(intDayToStringDay(getCurrentTime("wday", now, ltm))) != std::string::npos)
         return true;
@@ -151,7 +153,7 @@ std::string getLineInformation(const std::string &line){
     int i = line.find(':');
 
     if(i == std::string::npos){
-        MessageBox(nullptr, "Could not add to startup", "Error 0x01", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "Error 0x01", MB_ICONERROR);
         exit(1);
     }
 
@@ -166,10 +168,10 @@ std::string getLineInformation(const std::string &line){
 
 void getTimeInformation(const std::string &timeString, std::list <int> *hour_list, std::list <int> *minute_list){
     
-    int i = timeString.find(':');
+    const int i = timeString.find(':');
 
     if(i == std::string::npos){
-        MessageBox(nullptr, "Could not add to startup", "Error 0x02", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "Error 0x02", MB_ICONERROR);
         exit(1);
     }
     
@@ -183,12 +185,13 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
     std::string line;
 
     int i, nBlocks;
-    const int linesPerBlock = 9;
+    const int linesPerBlock = 10;
 
     info.open(infoPath);
 
     if(info.fail()){
-        MessageBox(nullptr, "info.txt did not open", "Error 0x02", MB_ICONERROR);
+        info.close();
+        MessageBox(nullptr, "info.txt did not open", "Error 0x03", MB_ICONERROR);
         exit(1);
     }
 
@@ -200,7 +203,7 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
     i--;
 
     if(i % (linesPerBlock + 1) != 0){
-        MessageBox(nullptr, "info.txt is not correctly formatted", "Error 0x03", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is not correctly formatted", "Error 0x04", MB_ICONERROR);
         exit(1);
     }
 
@@ -215,7 +218,6 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
 
         else
             lines[j] = getLineInformation(line);
-
     }
 
     info.close();
@@ -236,10 +238,9 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
     }
 }
 
-int main() {
+int main(){
 
-    ShowWindow(GetConsoleWindow(), SW_HIDE);
-    LPCSTR value = "CReminders";
+    const LPCSTR value = "CReminders";
     std::string infoPath, notificationPath;
 
     std::list <std::string>     notificationContent_list;
@@ -278,15 +279,11 @@ int main() {
         std::cout << l << std::endl;
     */
 
-    auto notificationContent_i      = notificationContent_list.begin();
-    auto hour_i                     = hour_list.begin();
-    auto minute_i                   = minute_list.begin();
-
     while(true){
 
-        notificationContent_i   = notificationContent_list.begin();
-        hour_i                  = hour_list.begin();
-        minute_i                = minute_list.begin();
+        auto notificationContent_i      = notificationContent_list.begin();
+        auto hour_i                     = hour_list.begin();
+        auto minute_i                   = minute_list.begin();
 
         for (int i = 0; i < notificationContent_list.size(); i++) {
             notificationContent = *notificationContent_i;

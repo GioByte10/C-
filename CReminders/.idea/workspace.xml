@@ -9,6 +9,9 @@
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="CReminders" targetName="CReminders" />
+      <config projectName="CReminders" targetName="test4" />
+      <config projectName="CReminders" targetName="test3" />
+      <config projectName="CReminders" targetName="test2" />
       <config projectName="CReminders" targetName="test" />
     </generated>
   </component>
@@ -19,8 +22,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="174f36c7-dec9-49d4-8144-b66aed332f6b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/header.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Temp/.idea/Temp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-131077b0596e27d56ae9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-07-31T02-54-06-0260.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-CReminders-Debug-3ffd4d115bb47683bc8b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-test-Debug-32e90f86bbaa8ef4d2a2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CReminders.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CReminders.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CReminders.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CReminders.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ToastNotification/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ToastNotification/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ToastNotification/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ToastNotification/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +78,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -64,8 +92,13 @@
       <recent name="C:\Users\super\Desktop\Giovanni\Programacion\Lenguajes\C++\CReminders\cmake-build-debug" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.test">
+  <component name="RunManager" selected="CMake Application.test4">
     <configuration name="CReminders" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CReminders" TARGET_NAME="CReminders" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CReminders" RUN_TARGET_NAME="CReminders">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -75,9 +108,27 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CReminders" TARGET_NAME="test2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CReminders" RUN_TARGET_NAME="test2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CReminders" TARGET_NAME="test3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CReminders" RUN_TARGET_NAME="test3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CReminders" TARGET_NAME="test4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CReminders" RUN_TARGET_NAME="test4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.CReminders" />
       <item itemvalue="CMake Application.test" />
+      <item itemvalue="CMake Application.test2" />
+      <item itemvalue="CMake Application.test3" />
+      <item itemvalue="CMake Application.test4" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +146,36 @@
       <workItem from="1659225532555" duration="12120000" />
       <workItem from="1659285237615" duration="7971000" />
       <workItem from="1659313883398" duration="5861000" />
-      <workItem from="1659372949443" duration="8681000" />
+      <workItem from="1659372949443" duration="12909000" />
+      <workItem from="1659415821287" duration="601000" />
+      <workItem from="1659423257646" duration="1708000" />
+      <workItem from="1659457150160" duration="4598000" />
+      <workItem from="1659468087133" duration="2345000" />
+      <workItem from="1659470665977" duration="170000" />
+      <workItem from="1659470961682" duration="364000" />
+      <workItem from="1659471455359" duration="11050000" />
+      <workItem from="1659485729000" duration="79000" />
+      <workItem from="1659485850705" duration="165000" />
+      <workItem from="1659486071968" duration="46000" />
+      <workItem from="1659486206180" duration="790000" />
+      <workItem from="1659487967398" duration="156000" />
+      <workItem from="1659488686005" duration="518000" />
+      <workItem from="1659490910772" duration="861000" />
+      <workItem from="1659491874596" duration="31000" />
+      <workItem from="1659491984757" duration="82000" />
+      <workItem from="1659492160604" duration="632000" />
+      <workItem from="1659493288291" duration="5506000" />
+      <workItem from="1659543027175" duration="4401000" />
+      <workItem from="1659646492075" duration="1208000" />
+      <workItem from="1659736209814" duration="1360000" />
+      <workItem from="1659814663465" duration="1894000" />
+      <workItem from="1659827201084" duration="196000" />
+      <workItem from="1659843537617" duration="832000" />
+      <workItem from="1659844388355" duration="198000" />
+      <workItem from="1659844598018" duration="909000" />
+      <workItem from="1659852001790" duration="596000" />
+      <workItem from="1659900618719" duration="2443000" />
+      <workItem from="1659913106968" duration="1296000" />
     </task>
     <servers />
   </component>

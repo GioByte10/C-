@@ -16,7 +16,10 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -32,7 +35,10 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -41,15 +47,36 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CReminders::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CReminders-Debug-3ffd4d115bb47683bc8b.json",
+					"jsonFile" : "target-CReminders-Debug-f2bb824bc73c147eeda3.json",
 					"name" : "CReminders",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-32e90f86bbaa8ef4d2a2.json",
+					"jsonFile" : "target-test-Debug-4ad9ec988fd6718601ab.json",
 					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test2-Debug-4c13ce7ae727c1dd37ff.json",
+					"name" : "test2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test3-Debug-86f4a6c3592a1c0200a6.json",
+					"name" : "test3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test4-Debug-28d14768e8a50793b4ee.json",
+					"name" : "test4",
 					"projectIndex" : 0
 				}
 			]
