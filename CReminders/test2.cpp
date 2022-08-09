@@ -70,7 +70,7 @@ int main(){
     std::list<std::string> fileInformation;
     updateList(&fileInformation);
 
-    LPCSTR lpPathName = "C:\\...\\ProjectFolder";
+    LPCSTR lpPathName = "C:\\Users\\super\\Desktop\\Giovanni\\Programacion\\Lenguajes\\C++\\CReminders\\cmake-build-debug";
 
     std::thread threadLastWritten(notifyLastWritten, lpPathName, &fileInformation);
     threadLastWritten.detach();
@@ -79,6 +79,7 @@ int main(){
         for(auto &line : fileInformation){
             std::cout << line << std::endl;
         }
+        std::cout << "Press any key to continue..." << std::endl;
         Sleep(10000);
     }
 }
