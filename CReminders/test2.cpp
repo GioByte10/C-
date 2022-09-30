@@ -12,12 +12,10 @@ BOOL HandlerRoutine(DWORD fdwCtrlType)
     {
         case CTRL_LOGOFF_EVENT:
             SetEvent(stopEvent);
-            Beep(1000, 1000);
             return TRUE;
 
         case CTRL_SHUTDOWN_EVENT:
             SetEvent(stopEvent);
-            Beep(1000, 1000);
             return TRUE;
 
         default:

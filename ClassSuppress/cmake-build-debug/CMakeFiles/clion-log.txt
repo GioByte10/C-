@@ -1,0 +1,4 @@
+C:\Users\super\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/super/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.3345.126/bin/ninja/win/ninja.exe -G Ninja -S C:\Users\super\Desktop\Giovanni\Programacion\Lenguajes\C++\ClassSuppress -B C:\Users\super\Desktop\Giovanni\Programacion\Lenguajes\C++\ClassSuppress\cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ClassSuppress/cmake-build-debug

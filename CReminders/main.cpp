@@ -2,6 +2,25 @@
 #include <iostream>
 #include <list>
 #include <fstream>
+#include <thread>
+
+HANDLE stopEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
+
+BOOL HandlerRoutine(DWORD fdwCtrlType){
+    switch( fdwCtrlType )
+    {
+        case CTRL_LOGOFF_EVENT:
+            SetEvent(stopEvent);
+            return TRUE;
+
+        case CTRL_SHUTDOWN_EVENT:
+            SetEvent(stopEvent);
+            return TRUE;
+
+        default:
+            return FALSE;
+    }
+}
 
 bool checkAlreadyExists(LPCSTR value){
 
@@ -24,12 +43,12 @@ void addToRegistry(LPCSTR value, TCHAR *filePath){
     RegCloseKey(newKey);
 
     if(result != ERROR_SUCCESS){
-        MessageBox(nullptr, "Could not add to startup", "Error 0x00", MB_ICONERROR);
+        MessageBox(nullptr, "Could not add to startup", "CReminders Error 0x00", MB_ICONERROR);
         exit(1);
     }
 }
 
-std::string intDayToStringDay(int intDay){
+std::string intDayToStringDayEn(int intDay){
 
     if(intDay == 1)
         return "monday";
@@ -53,7 +72,6 @@ std::string intDayToStringDay(int intDay){
         return "sunday";
 
     return "";
-
 }
 
 int getCurrentTime(const std::string &arg, time_t now, tm *ltm){
@@ -83,7 +101,6 @@ int getCurrentTime(const std::string &arg, time_t now, tm *ltm){
         return ltm -> tm_year;
 
     return -1;
-
 }
 
 bool isToday(int i, time_t now, tm *ltm, std::list<std::string> *days_list){
@@ -93,7 +110,7 @@ bool isToday(int i, time_t now, tm *ltm, std::list<std::string> *days_list){
 
     const std::string days = *days_i;
 
-    if(days == "everyday" || days.find(intDayToStringDay(getCurrentTime("wday", now, ltm))) != std::string::npos)
+    if(days == "everyday" || days.find(intDayToStringDayEn(getCurrentTime("wday", now, ltm))) != std::string::npos)
         return true;
 
     return false;
@@ -123,19 +140,18 @@ std::string getDirectoryPath(TCHAR *filePath, int steps){
     return directoryPath;
 }
 
-std::string patchSpaces(const std::string &line, char r){
+std::string patchSpaces(const std::string &line, const std::string &r){
 
-        std::string newLine;
+    std::string newLine;
 
-        for(char c : line){
-            if(c == ' ')
-                newLine += r;
-            else
-                newLine += c;
-        }
+    for(char c : line){
+        if(c == ' ')
+            newLine += r;
+        else
+            newLine += c;
+    }
 
         return newLine;
-
 }
 
 bool findChars(const std::string &line, const std::string &chars){
@@ -145,15 +161,45 @@ bool findChars(const std::string &line, const std::string &chars){
             return true;
 
     return false;
+}
+
+std::string getDays(std::string daysLine){
+
+    std::string daysL = "";
+    transform(daysLine.begin(), daysLine.end(), daysLine.begin(), ::tolower);
+
+    if(daysLine.find("lunes") != std::string::npos || daysLine.find("monday") != std::string::npos)
+        daysL += "monday ";
+
+    else if(daysLine.find("martes") != std::string::npos || daysLine.find("tuesday") != std::string::npos)
+        daysL += "tuesday ";
+
+    else if(daysLine.find("miercoles") != std::string::npos || daysLine.find("wednesday") != std::string::npos)
+        daysL += "wednesday ";
+
+    else if(daysLine.find("jueves") != std::string::npos || daysLine.find("thursday") != std::string::npos)
+        daysL += "thursday ";
+
+    else if(daysLine.find("viernes") != std::string::npos || daysLine.find("friday") != std::string::npos)
+        daysL += "friday ";
+
+    else if(daysLine.find("sabado") != std::string::npos || daysLine.find("saturday") != std::string::npos)
+        daysL += "saturday ";
+
+    else if(daysLine.find("domingo") != std::string::npos || daysLine.find("sunday") != std::string::npos)
+        daysL += "sunday ";
+
+    return daysL;
 
 }
 
 std::string getLineInformation(const std::string &line){
 
+    std::string newLine;
     int i = line.find(':');
 
     if(i == std::string::npos){
-        MessageBox(nullptr, "info.txt is incorrectly formatted", "Error 0x01", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x01", MB_ICONERROR);
         exit(1);
     }
 
@@ -163,7 +209,12 @@ std::string getLineInformation(const std::string &line){
         if(line[i] != ' ')
             break;
 
-    return patchSpaces(line.substr(i, line.length() - 1), '~');
+    newLine = patchSpaces(line.substr(i, line.length() - 1), "_SPC_");
+
+    if(empty(newLine))
+        return "_NULL~_";
+
+    return newLine;
 }
 
 void getTimeInformation(const std::string &timeString, std::list <int> *hour_list, std::list <int> *minute_list){
@@ -171,12 +222,19 @@ void getTimeInformation(const std::string &timeString, std::list <int> *hour_lis
     const int i = timeString.find(':');
 
     if(i == std::string::npos){
-        MessageBox(nullptr, "info.txt is incorrectly formatted", "Error 0x02", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x02", MB_ICONERROR);
         exit(1);
     }
-    
-    hour_list->emplace_back     (stoi(timeString.substr(0,i)));
-    minute_list->emplace_back   (stoi(timeString.substr(i + 1, timeString.length())));
+
+    try {
+        hour_list->emplace_back(stoi(timeString.substr(0, i)));
+        minute_list->emplace_back(stoi(timeString.substr(i + 1, timeString.length())));
+
+    } catch (std::invalid_argument &e){
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x03", MB_ICONERROR);
+        exit(1);
+    }
+
 }
 
 void getInformation(const std::string &infoPath, std::list<std::string> *notificationContent_list, std::list<std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list){
@@ -188,10 +246,12 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
     const int linesPerBlock = 10;
 
     info.open(infoPath);
+    info.clear();
+    info.seekg(0);
 
     if(info.fail()){
         info.close();
-        MessageBox(nullptr, "info.txt did not open", "Error 0x03", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt did not open", "CReminders Error 0x04", MB_ICONERROR);
         exit(1);
     }
 
@@ -202,8 +262,10 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
 
     i--;
 
+    //std::cout << i << std::endl;
+
     if(i % (linesPerBlock + 1) != 0){
-        MessageBox(nullptr, "info.txt is not correctly formatted", "Error 0x04", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is not correctly formatted", "CReminders Error 0x05", MB_ICONERROR);
         exit(1);
     }
 
@@ -226,22 +288,46 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
         line = "";
 
         if(findChars(lines[j * linesPerBlock], "yYsS")){
-            line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock];
+            line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock]+ ' ' + lines[4 + j * linesPerBlock];
 
-            if(findChars(lines[4 + j * linesPerBlock], "yYsS"))
-                line += ' ' + lines[5 + j * linesPerBlock] + ' ' + lines[6 + j * linesPerBlock];
+            if(findChars(lines[5 + j * linesPerBlock], "yYsS"))
+                line += ' ' + lines[6 + j * linesPerBlock] + ' ' + lines[7 + j * linesPerBlock];
+            else
+                line += " _NULL~_ _NULL~_";
 
             notificationContent_list->emplace_back(line);
-            getTimeInformation(lines[7 + j * linesPerBlock], hour_list, minute_list);
-            days_list->emplace_back(lines[8 + j * linesPerBlock]);
+            getTimeInformation(lines[8 + j * linesPerBlock], hour_list, minute_list);
+
+            if(getDays(lines[9 + j * linesPerBlock]).length())
+                days_list->emplace_back(getDays(lines[9 + j * linesPerBlock]));
+            else
+                MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x06", MB_ICONERROR);
+        }
+    }
+}
+
+void notifyLastWritten(LPCSTR directoryPath, const std::string &infoPath, std::list<std::string> *notificationContent_list, std::list<std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list){
+
+    HANDLE handles[2];
+
+    while(WaitForSingleObject(stopEvent, 0) == WAIT_TIMEOUT){
+
+        handles[0] = FindFirstChangeNotification(directoryPath, FALSE, FILE_NOTIFY_CHANGE_LAST_WRITE);
+        handles[1] = stopEvent;
+
+        DWORD wait = WaitForMultipleObjects(2, handles, FALSE, INFINITE);
+        if (wait == WAIT_OBJECT_0){
+            getInformation(infoPath, notificationContent_list, days_list, hour_list, minute_list);
         }
     }
 }
 
 int main(){
 
+    SetConsoleCtrlHandler((PHANDLER_ROUTINE)HandlerRoutine, TRUE );
+
     const LPCSTR value = "CReminders";
-    std::string infoPath, notificationPath;
+    std::string directoryPath, infoPath, notificationPath;
 
     std::list <std::string>     notificationContent_list;
     std::list <std::string>     days_list;
@@ -261,14 +347,17 @@ int main(){
     time_t now = time(nullptr);
     tm *ltm = localtime(&now);
 
-    infoPath = getDirectoryPath(filePath, 1) + "\\info.txt";
-    notificationPath = getDirectoryPath(filePath, 1) + R"(\ToastNotification\dist\main.exe)";
+    directoryPath = getDirectoryPath(filePath, 1);
+    infoPath = directoryPath + "\\\\info.txt";
+    notificationPath = directoryPath + R"(\ToastNotification\dist\toastNotification.exe)";
+
+    std::thread threadLastWritten(notifyLastWritten, directoryPath.c_str(), infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list);
     getInformation(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list);
 
-    /*
+
     for(const auto& l: notificationContent_list)
         std::cout << l.c_str() << std::endl;
-
+    /*
     for(const auto& l: hour_list)
         std::cout << l << std::endl;
 
