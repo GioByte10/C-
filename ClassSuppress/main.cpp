@@ -284,6 +284,8 @@ int main() {
         if (!(isToday(i, now, ltm, &days) && checkClass(&times, i, now, ltm)))
             ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
     }
+
+    return 0;
 }
 
 #pragma clang diagnostic pop
