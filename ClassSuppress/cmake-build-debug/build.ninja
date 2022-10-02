@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_ClassSuppress: phony || CMakeFiles/Class
 
 build CMakeFiles/ClassSuppress.dir/main.cpp.obj: CXX_COMPILER__ClassSuppress_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ClassSuppress/main.cpp || cmake_object_order_depends_target_ClassSuppress
   DEP_FILE = CMakeFiles\ClassSuppress.dir\main.cpp.obj.d
-  FLAGS = -static -g -std=gnu++20
+  FLAGS = -static -mwindows -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\ClassSuppress.dir
   OBJECT_FILE_DIR = CMakeFiles\ClassSuppress.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/ClassSuppress.dir/main.cpp.obj: CXX_COMPILER__ClassSuppress_Deb
 # Link the executable ClassSuppress.exe
 
 build ClassSuppress.exe: CXX_EXECUTABLE_LINKER__ClassSuppress_Debug CMakeFiles/ClassSuppress.dir/main.cpp.obj
-  FLAGS = -static -g
+  FLAGS = -static -mwindows -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ClassSuppress.dir
   POST_BUILD = cd .
@@ -72,39 +72,6 @@ build ClassSuppress.exe: CXX_EXECUTABLE_LINKER__ClassSuppress_Debug CMakeFiles/C
   TARGET_FILE = ClassSuppress.exe
   TARGET_IMPLIB = libClassSuppress.dll.a
   TARGET_PDB = ClassSuppress.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test
-
-
-#############################################
-# Order-only phony target for test
-
-build cmake_object_order_depends_target_test: phony || CMakeFiles/test.dir
-
-build CMakeFiles/test.dir/test.cpp.obj: CXX_COMPILER__test_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ClassSuppress/cmake-build-debug/test.cpp || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles\test.dir\test.cpp.obj.d
-  FLAGS = -static -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles\test.dir
-  OBJECT_FILE_DIR = CMakeFiles\test.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test
-
-
-#############################################
-# Link the executable test.exe
-
-build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/test.cpp.obj
-  FLAGS = -static -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = test.exe
-  TARGET_IMPLIB = libtest.dll.a
-  TARGET_PDB = test.exe.dbg
 
 
 #############################################
@@ -134,8 +101,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build ClassSuppress: phony ClassSuppress.exe
 
-build test: phony test.exe
-
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +109,7 @@ build test: phony test.exe
 #############################################
 # Folder: C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ClassSuppress/cmake-build-debug
 
-build all: phony ClassSuppress.exe test.exe
+build all: phony ClassSuppress.exe
 
 # =============================================================================
 # Built-in targets

@@ -38,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -static -g"
+					"fragment" : " -static -mwindows -g"
 				},
 				{
 					"fragment" : "-std=gnu++20"
@@ -65,7 +65,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-static -g",
+				"fragment" : "-static -mwindows -g",
 				"role" : "flags"
 			},
 			{

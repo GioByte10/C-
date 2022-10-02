@@ -1,5 +1,5 @@
 # ninja log v5
-3	1373	6861322529041077	CMakeFiles/ClassSuppress.dir/main.cpp.obj	d3838b7fc5cac5da
-3104	3540	6861304776844020	test.exe	5deee7f06cd35d6b
-1373	1457	6861322529871104	ClassSuppress.exe	138a0c7f9166a6a6
+7	4202	6864016077207756	CMakeFiles/ClassSuppress.dir/main.cpp.obj	c4169360d8369830
+4203	5050	6864016085612029	ClassSuppress.exe	fda2eb1cd1edbbca
 7	3102	6861304772520408	CMakeFiles/test.dir/test.cpp.obj	ac4bf27603cefd3c
+3	364	6864020345988614	build.ninja	cc91732d3afb64c6

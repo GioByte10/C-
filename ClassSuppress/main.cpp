@@ -1,7 +1,42 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "modernize-use-nullptr"
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "EndlessLoop"
+
 #include <iostream>
 #include <windows.h>
 #include <list>
 #include <fstream>
+#include <Mmdeviceapi.h>
+#include <Endpointvolume.h>
+
+BOOL ChangeVolume(float nVolume)
+{
+    HRESULT hr = 0;
+    IMMDeviceEnumerator *deviceEnumerator = NULL;
+    hr = CoCreateInstance(__uuidof(MMDeviceEnumerator), NULL, CLSCTX_INPROC_SERVER,
+                          __uuidof(IMMDeviceEnumerator), (LPVOID *)&deviceEnumerator);
+    if(FAILED(hr))
+        return FALSE;
+
+    IMMDevice *defaultDevice = NULL;
+    hr = deviceEnumerator->GetDefaultAudioEndpoint(eRender, eConsole, &defaultDevice);
+    deviceEnumerator->Release();
+    if(FAILED(hr))
+        return FALSE;
+
+    IAudioEndpointVolume *endpointVolume = NULL;
+    hr = defaultDevice->Activate(__uuidof(IAudioEndpointVolume),
+                                 CLSCTX_INPROC_SERVER, NULL, (LPVOID *)&endpointVolume);
+    defaultDevice->Release();
+    if(FAILED(hr))
+        return FALSE;
+
+    hr = endpointVolume->SetMasterVolumeLevelScalar(nVolume, NULL);
+    endpointVolume->Release();
+
+    return SUCCEEDED(hr);
+}
 
 bool checkAlreadyExists(LPCSTR value){
 
@@ -24,7 +59,7 @@ void addToRegistry(LPCSTR value, TCHAR *filePath){
     RegCloseKey(newKey);
 
     if(result != ERROR_SUCCESS){
-        MessageBox(nullptr, "Could not add to startup", "CReminders Error 0x00", MB_ICONERROR);
+        MessageBox(nullptr, "Could not add to startup", "ClassSuppress Error 0x00", MB_ICONERROR);
         exit(1);
     }
 }
@@ -82,6 +117,45 @@ int getCurrentTime(const std::string &arg, time_t now, tm *ltm){
     return -1;
 }
 
+std::string intDayToStringDayEn(int intDay){
+
+    if(intDay == 1)
+        return "monday";
+
+    else if(intDay == 2)
+        return "tuesday";
+
+    else if(intDay == 3)
+        return "wednesday";
+
+    else if(intDay == 4)
+        return "thursday";
+
+    else if(intDay == 5)
+        return "friday";
+
+    else if(intDay == 6)
+        return "saturday";
+
+    else if(intDay == 0)
+        return "sunday";
+
+    return "";
+}
+
+bool isToday(int i, time_t now, tm *ltm, std::list<std::string> *days_list){
+
+    auto days_i = days_list -> begin();
+    advance(days_i, i);
+
+    const std::string days = *days_i;
+
+    if(days == "everyday" || days.find(intDayToStringDayEn(getCurrentTime("wday", now, ltm))) != std::string::npos)
+        return true;
+
+    return false;
+}
+
 void getInformation(std::list<std::string> *times, std::list<std::string> *day, const std::string& infoPath){
 
     std::ifstream info;
@@ -93,7 +167,7 @@ void getInformation(std::list<std::string> *times, std::list<std::string> *day, 
 
     if(info.fail()){
         info.close();
-        MessageBox(nullptr, "info.txt did not open", "CReminders Error 0x04", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt did not open", "ClassSuppress Error 0x01", MB_ICONERROR);
         exit(1);
     }
 
@@ -113,7 +187,7 @@ int getTimeInformation(const std::string &timeString){
     int min;
 
     if(timeString.find(':') == std::string::npos){
-        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x02", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "ClassSuppress Error 0x02", MB_ICONERROR);
         exit(1);
     }
 
@@ -125,7 +199,7 @@ int getTimeInformation(const std::string &timeString){
         return min;
 
     } catch (std::invalid_argument &e){
-        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x03", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "ClassSuppress Error 0x03", MB_ICONERROR);
         exit(1);
     }
 
@@ -140,18 +214,25 @@ bool inRange(std::list<std::string> *range, time_t now, tm *ltm){
 
     current = getCurrentTime("hour", now, ltm) * 60 + getCurrentTime("min", now, ltm);
 
-
     for(int j = 0; j < range->size(); j++){
-        if (line.find('-') != std::string::npos) {
+        if (line.find('-') != std::string::npos){
             i = line.find('-');
             starts = getTimeInformation(line.substr(0, i));
             ends = getTimeInformation(line.substr(i + 1, line.length()));
+
+            if(current >= starts && current <= ends)
+                return true;
+        }else{
+            MessageBox(nullptr, "info.txt is incorrectly formatted", "ClassSuppress Error 0x04", MB_ICONERROR);
+            exit(1);
         }
     }
 
+    return false;
+
 }
 
-bool checkClass(std::list<std::string> *times, std::list<std::string> *day, int move, time_t now, tm *ltm){
+bool checkClass(std::list<std::string> *times, int move, time_t now, tm *ltm){
 
     std::list <std::string> range;
     std::string line;
@@ -178,7 +259,7 @@ int main() {
     std::string directoryPath, infoPath;
 
     std::list <std::string>     times;
-    std::list <std::string>     day;
+    std::list <std::string>     days;
 
     time_t now = time(nullptr);
     tm *ltm = localtime(&now);
@@ -193,10 +274,17 @@ int main() {
     directoryPath = getDirectoryPath(filePath, 1);
     infoPath = directoryPath + "\\\\info.txt";
 
-    getInformation(&times, &day, infoPath);
-    checkClass(&times, &day, 0, now, ltm);
+    getInformation(&times, &days, infoPath);
 
-    //ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
+    CoInitialize(NULL);
+    ChangeVolume(0);
+    CoUninitialize();
 
-    return 0;
+    for(int i = 0; i < days.size(); i++) {
+        if (!(isToday(i, now, ltm, &days) && checkClass(&times, i, now, ltm)))
+            ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
+    }
 }
+
+#pragma clang diagnostic pop
+#pragma clang diagnostic pop
