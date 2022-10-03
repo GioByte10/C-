@@ -171,25 +171,44 @@ std::string getDays(std::string daysLine){
     if(daysLine.find("lunes") != std::string::npos || daysLine.find("monday") != std::string::npos)
         daysL += "monday ";
 
-    else if(daysLine.find("martes") != std::string::npos || daysLine.find("tuesday") != std::string::npos)
+    if(daysLine.find("martes") != std::string::npos || daysLine.find("tuesday") != std::string::npos)
         daysL += "tuesday ";
 
-    else if(daysLine.find("miercoles") != std::string::npos || daysLine.find("wednesday") != std::string::npos)
+    if(daysLine.find("miercoles") != std::string::npos || daysLine.find("wednesday") != std::string::npos)
         daysL += "wednesday ";
 
-    else if(daysLine.find("jueves") != std::string::npos || daysLine.find("thursday") != std::string::npos)
+    if(daysLine.find("jueves") != std::string::npos || daysLine.find("thursday") != std::string::npos)
         daysL += "thursday ";
 
-    else if(daysLine.find("viernes") != std::string::npos || daysLine.find("friday") != std::string::npos)
+    if(daysLine.find("viernes") != std::string::npos || daysLine.find("friday") != std::string::npos)
         daysL += "friday ";
 
-    else if(daysLine.find("sabado") != std::string::npos || daysLine.find("saturday") != std::string::npos)
+    if(daysLine.find("sabado") != std::string::npos || daysLine.find("saturday") != std::string::npos)
         daysL += "saturday ";
 
-    else if(daysLine.find("domingo") != std::string::npos || daysLine.find("sunday") != std::string::npos)
+    if(daysLine.find("domingo") != std::string::npos || daysLine.find("sunday") != std::string::npos)
         daysL += "sunday ";
 
     return daysL;
+
+}
+
+std::string getDuration(std::string durationLine){
+
+    std::string durationL = "";
+
+    transform(durationLine.begin(), durationLine.end(), durationLine.begin(), ::tolower);
+
+    if(durationL.find("long") != std::string::npos || durationL.find("largo") != std::string::npos || durationL.find("larga") != std::string::npos)
+        durationL = "long";
+
+    else if(durationL.find("short") != std::string::npos || durationL.find("corto") != std::string::npos || durationL.find("corta") != std::string::npos)
+        durationL = "short";
+
+    else
+        durationL = "long";
+
+    return durationL;
 
 }
 
@@ -262,8 +281,6 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
 
     i--;
 
-    //std::cout << i << std::endl;
-
     if(i % (linesPerBlock + 1) != 0){
         MessageBox(nullptr, "info.txt is not correctly formatted", "CReminders Error 0x05", MB_ICONERROR);
         exit(1);
@@ -288,7 +305,7 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
         line = "";
 
         if(findChars(lines[j * linesPerBlock], "yYsS")){
-            line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock]+ ' ' + lines[4 + j * linesPerBlock];
+            line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock]+ ' ' + getDuration(lines[4 + j * linesPerBlock]);
 
             if(findChars(lines[5 + j * linesPerBlock], "yYsS"))
                 line += ' ' + lines[6 + j * linesPerBlock] + ' ' + lines[7 + j * linesPerBlock];

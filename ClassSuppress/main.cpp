@@ -10,8 +10,7 @@
 #include <Mmdeviceapi.h>
 #include <Endpointvolume.h>
 
-BOOL ChangeVolume(float nVolume)
-{
+BOOL ChangeVolume(float nVolume){
     HRESULT hr = 0;
     IMMDeviceEnumerator *deviceEnumerator = NULL;
     hr = CoCreateInstance(__uuidof(MMDeviceEnumerator), NULL, CLSCTX_INPROC_SERVER,
@@ -257,6 +256,7 @@ int main() {
 
     LPCSTR value = "ClassSuppress";
     std::string directoryPath, infoPath;
+    bool ifAny = false;
 
     std::list <std::string>     times;
     std::list <std::string>     days;
@@ -281,8 +281,14 @@ int main() {
     CoUninitialize();
 
     for(int i = 0; i < days.size(); i++) {
-        if (!(isToday(i, now, ltm, &days) && checkClass(&times, i, now, ltm)))
-            ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
+        if (isToday(i, now, ltm, &days) && checkClass(&times, i, now, ltm)) {
+            ifAny = true;
+            break;
+        }
+    }
+
+    if(!ifAny){
+        ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
     }
 
     return 0;

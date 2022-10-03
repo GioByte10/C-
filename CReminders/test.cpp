@@ -6,18 +6,11 @@
 
 int main(){
 
-    std::string s = "";
 
-    if(s.length())
-        std::cout << "s is not empty" << std::endl;
+    std::string d = "hello";
 
-    std::cout << "s is empty" << std::endl;
-
-    else {
-        std::cout << "s is empty" << std::endl;
-        std::cout << "s.length() = " << s.length() << std::endl;
-    }
-
+    if(d.find("llo") != std::string::npos)
+        std::cout << d.find("llo") << std::endl;
 
     return 0;
 }
