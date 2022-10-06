@@ -11,7 +11,7 @@
 #include <Endpointvolume.h>
 
 BOOL ChangeVolume(float nVolume){
-    HRESULT hr;
+    HRESULT hr = 0;
     IMMDeviceEnumerator *deviceEnumerator = NULL;
     hr = CoCreateInstance(__uuidof(MMDeviceEnumerator), NULL, CLSCTX_INPROC_SERVER,
                           __uuidof(IMMDeviceEnumerator), (LPVOID *)&deviceEnumerator);
@@ -170,6 +170,7 @@ int getTimeInformation(const std::string &timeString){
     try {
         min = stoi(timeString.substr(0, i)) * 60;
         min += stoi(timeString.substr(i + 1, timeString.length()));
+        //std::cout << stoi(timeString.substr(0, i)) << " " << stoi(timeString.substr(i + 1, timeString.length())) << std::endl;
         return min;
 
     } catch (std::invalid_argument &e){
@@ -201,25 +202,29 @@ void getInformation(std::list<std::string> *times, std::list<std::string> *day, 
 
     }
     info.close();
+
+//    for (auto & time : *times)
+//        std::cout << time << std::endl;
+
 }
 
 bool inRange(std::list<std::string> *range, time_t now, tm *ltm){
 
     auto range_i = range->begin();
-    std::string line;
+    std::string line = *range_i;
     unsigned long long i;
     int starts, ends, current;
 
     current = getCurrentTime("hour", now, ltm) * 60 + getCurrentTime("min", now, ltm);
 
     for(int j = 0; j < range->size(); j++){
-        line = *range_i;
-
         if (line.find('-') != std::string::npos){
             i = line.find('-');
             starts = getTimeInformation(line.substr(0, i));
             ends = getTimeInformation(line.substr(i + 1, line.length()));
-            //std::cout << line.substr(0, i) << " " << line.substr(i + 1, line.length()) << std::endl;
+
+            std::cout << starts << " " << ends << " " << current << std::endl;
+            std::cout << "l" << std::endl;
 
             if(current >= starts && current <= ends)
                 return true;
@@ -227,7 +232,6 @@ bool inRange(std::list<std::string> *range, time_t now, tm *ltm){
             MessageBox(nullptr, "info.txt is incorrectly formatted", "ClassSuppress Error 0x04", MB_ICONERROR);
             exit(1);
         }
-        std::advance(range_i, 1);
     }
 
     return false;
@@ -251,11 +255,16 @@ bool checkClass(std::list<std::string> *times, int move, time_t now, tm *ltm){
         line = line.substr(i + 1, line.length());
     }
 
+    for (auto & range_i : range)
+        std::cout << range_i << std::endl;
+
     return inRange(&range, now, ltm);
 
 }
 
 int main() {
+
+    std::cout << "ClassSuppress v1.0" << std::endl;
 
     LPCSTR value = "ClassSuppress";
     std::string directoryPath, infoPath;
@@ -279,19 +288,21 @@ int main() {
 
     getInformation(&times, &days, infoPath);
 
-    CoInitialize(NULL);
-    ChangeVolume(0);
-    CoUninitialize();
+    //CoInitialize(NULL);
+    //ChangeVolume(0);
+    //CoUninitialize();
 
     for(int i = 0; i < days.size(); i++) {
         if (isToday(i, now, ltm, &days) && checkClass(&times, i, now, ltm)) {
+            std::cout << " l";
             ifAny = true;
             break;
         }
     }
 
-    if(!ifAny)
-        ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
+    if(!ifAny){
+        //ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
+    }
 
     return 0;
 }

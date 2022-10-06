@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "ClassSuppress",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "ClassSuppress::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-ClassSuppress-Debug-325180d261a19b7af520.json",
 					"name" : "ClassSuppress",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-29a65ba2c24b6131e8c4.json",
+					"name" : "test",
 					"projectIndex" : 0
 				}
 			]
