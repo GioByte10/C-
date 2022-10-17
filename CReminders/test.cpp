@@ -3,14 +3,23 @@
 #include <thread>         // std::thread
 #include <string>
 
+void changePointerValue(int *a){
 
-int main(){
+    int b = 9;
 
+    *a = 10;
 
-    std::string d = "hello";
+}
 
-    if(d.find("llo") != std::string::npos)
-        std::cout << d.find("llo") << std::endl;
+int main(int argc, char *argv[]){
+
+    int a;
+    changePointerValue(&a);
+
+    a = 7;
+
+    if(!a)
+        std::cout << "a is 0" << std::endl;
 
     return 0;
 }

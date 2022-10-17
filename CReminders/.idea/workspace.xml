@@ -24,34 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="174f36c7-dec9-49d4-8144-b66aed332f6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.cmake/api/v1/reply/cache-v2-140144573c3f9d0dc69f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-021c94d9f4be8f33f278.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9029aeb07f6a6d9b1619.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-02T08-20-34-0734.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-5722f2721cca77a8ab39.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/ClassSuppress.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/ClassSuppress.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/CMakeFiles/test.dir/test.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/ClassSuppress.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/ClassSuppress.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassSuppress/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassSuppress/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +61,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/super/Downloads/github-copilot-intellij-1.1.28.1744.zip&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;
   }
 }</component>
@@ -97,11 +72,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.test">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CReminders" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CReminders" TARGET_NAME="CReminders" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CReminders" RUN_TARGET_NAME="CReminders">
       <envs>
         <env name="CONSOLE_WIDTH" value="400" />
@@ -216,6 +186,11 @@
       <workItem from="1664817682190" duration="1556000" />
       <workItem from="1664827477612" duration="51000" />
       <workItem from="1665088736849" duration="130000" />
+      <workItem from="1665907745360" duration="3657000" />
+      <workItem from="1665911423272" duration="399000" />
+      <workItem from="1665946323372" duration="1939000" />
+      <workItem from="1665960311075" duration="5362000" />
+      <workItem from="1665984858458" duration="1000" />
     </task>
     <servers />
   </component>

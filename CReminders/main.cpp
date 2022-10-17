@@ -7,8 +7,7 @@
 HANDLE stopEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
 
 BOOL HandlerRoutine(DWORD fdwCtrlType){
-    switch( fdwCtrlType )
-    {
+    switch( fdwCtrlType ){
         case CTRL_LOGOFF_EVENT:
             SetEvent(stopEvent);
             return TRUE;
@@ -46,6 +45,26 @@ void addToRegistry(LPCSTR value, TCHAR *filePath){
         MessageBox(nullptr, "Could not add to startup", "CReminders Error 0x00", MB_ICONERROR);
         exit(1);
     }
+}
+
+void deactivate(LPCSTR value) {
+
+    std::cout << "Deactivating..." << std::endl;
+
+    HKEY newKey;
+
+    RegOpenKey(HKEY_CURRENT_USER, R"(Software\Microsoft\Windows\CurrentVersion\Run)", &newKey);
+    LONG result = RegDeleteValue(newKey, value);
+    RegCloseKey(newKey);
+
+    if (result != ERROR_SUCCESS) {
+        MessageBox(nullptr, "Could not delete from startup", "CReminders Error 0x01", MB_ICONERROR);
+        exit(1);
+    }
+
+    system("taskkill /f /im CReminders.exe");
+    MessageBox(nullptr, "CReminders has successfully been deactivated\nSe ha desactivado CReminders exitosamente",
+               "CReminders", MB_ICONINFORMATION);
 }
 
 std::string intDayToStringDayEn(int intDay){
@@ -163,34 +182,47 @@ bool findChars(const std::string &line, const std::string &chars){
     return false;
 }
 
+void clearLists(std::list <std::string> *notificationContent_list, std::list <std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list){
+
+    notificationContent_list->clear();
+    days_list->clear();
+    hour_list->clear();
+    minute_list->clear();
+
+}
+
 std::string getDays(std::string daysLine){
 
     std::string daysL = "";
     transform(daysLine.begin(), daysLine.end(), daysLine.begin(), ::tolower);
 
-    if(daysLine.find("lunes") != std::string::npos || daysLine.find("monday") != std::string::npos)
-        daysL += "monday ";
+    if(daysLine.find("everyday") != std::string::npos || daysLine.find("diario") != std::string::npos)
+        daysL = "everyday";
 
-    if(daysLine.find("martes") != std::string::npos || daysLine.find("tuesday") != std::string::npos)
-        daysL += "tuesday ";
+    else{
+        if (daysLine.find("lunes") != std::string::npos || daysLine.find("monday") != std::string::npos)
+            daysL += "monday ";
 
-    if(daysLine.find("miercoles") != std::string::npos || daysLine.find("wednesday") != std::string::npos)
-        daysL += "wednesday ";
+        if (daysLine.find("martes") != std::string::npos || daysLine.find("tuesday") != std::string::npos)
+            daysL += "tuesday ";
 
-    if(daysLine.find("jueves") != std::string::npos || daysLine.find("thursday") != std::string::npos)
-        daysL += "thursday ";
+        if (daysLine.find("miercoles") != std::string::npos || daysLine.find("wednesday") != std::string::npos)
+            daysL += "wednesday ";
 
-    if(daysLine.find("viernes") != std::string::npos || daysLine.find("friday") != std::string::npos)
-        daysL += "friday ";
+        if (daysLine.find("jueves") != std::string::npos || daysLine.find("thursday") != std::string::npos)
+            daysL += "thursday ";
 
-    if(daysLine.find("sabado") != std::string::npos || daysLine.find("saturday") != std::string::npos)
-        daysL += "saturday ";
+        if (daysLine.find("viernes") != std::string::npos || daysLine.find("friday") != std::string::npos)
+            daysL += "friday ";
 
-    if(daysLine.find("domingo") != std::string::npos || daysLine.find("sunday") != std::string::npos)
-        daysL += "sunday ";
+        if (daysLine.find("sabado") != std::string::npos || daysLine.find("saturday") != std::string::npos)
+            daysL += "saturday ";
+
+        if (daysLine.find("domingo") != std::string::npos || daysLine.find("sunday") != std::string::npos)
+            daysL += "sunday ";
+    }
 
     return daysL;
-
 }
 
 std::string getDuration(std::string durationLine){
@@ -218,7 +250,7 @@ std::string getLineInformation(const std::string &line){
     int i = line.find(':');
 
     if(i == std::string::npos){
-        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x01", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x02", MB_ICONERROR);
         exit(1);
     }
 
@@ -241,7 +273,7 @@ void getTimeInformation(const std::string &timeString, std::list <int> *hour_lis
     const int i = timeString.find(':');
 
     if(i == std::string::npos){
-        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x02", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x03", MB_ICONERROR);
         exit(1);
     }
 
@@ -250,13 +282,13 @@ void getTimeInformation(const std::string &timeString, std::list <int> *hour_lis
         minute_list->emplace_back(stoi(timeString.substr(i + 1, timeString.length())));
 
     } catch (std::invalid_argument &e){
-        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x03", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x04", MB_ICONERROR);
         exit(1);
     }
 
 }
 
-void getInformation(const std::string &infoPath, std::list<std::string> *notificationContent_list, std::list<std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list){
+void getInformation(const std::string &infoPath, std::list<std::string> *notificationContent_list, std::list<std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list, bool demo){
 
     std::ifstream info;
     std::string line;
@@ -264,13 +296,15 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
     int i, nBlocks;
     const int linesPerBlock = 10;
 
+    clearLists(notificationContent_list, days_list, hour_list, minute_list);
+
     info.open(infoPath);
     info.clear();
     info.seekg(0);
 
     if(info.fail()){
         info.close();
-        MessageBox(nullptr, "info.txt did not open", "CReminders Error 0x04", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt did not open", "CReminders Error 0x05", MB_ICONERROR);
         exit(1);
     }
 
@@ -282,7 +316,7 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
     i--;
 
     if(i % (linesPerBlock + 1) != 0){
-        MessageBox(nullptr, "info.txt is not correctly formatted", "CReminders Error 0x05", MB_ICONERROR);
+        MessageBox(nullptr, "info.txt is not correctly formatted", "CReminders Error 0x06", MB_ICONERROR);
         exit(1);
     }
 
@@ -305,7 +339,12 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
         line = "";
 
         if(findChars(lines[j * linesPerBlock], "yYsS")){
-            line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock]+ ' ' + getDuration(lines[4 + j * linesPerBlock]);
+            line += lines[1 + j * linesPerBlock] + ' ' + lines[2 + j * linesPerBlock] + ' ' + lines[3 + j * linesPerBlock];
+
+            if (!demo)
+                line += ' ' + getDuration(lines[4 + j * linesPerBlock]);
+            else
+                line += " short";
 
             if(findChars(lines[5 + j * linesPerBlock], "yYsS"))
                 line += ' ' + lines[6 + j * linesPerBlock] + ' ' + lines[7 + j * linesPerBlock];
@@ -317,8 +356,11 @@ void getInformation(const std::string &infoPath, std::list<std::string> *notific
 
             if(getDays(lines[9 + j * linesPerBlock]).length())
                 days_list->emplace_back(getDays(lines[9 + j * linesPerBlock]));
-            else
-                MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x06", MB_ICONERROR);
+            else {
+                std::cout << getDays(lines[9 + j * linesPerBlock]) << std::endl;
+                MessageBox(nullptr, "info.txt is incorrectly formatted", "CReminders Error 0x07", MB_ICONERROR);
+                exit(1);
+            }
         }
     }
 }
@@ -334,14 +376,69 @@ void notifyLastWritten(LPCSTR directoryPath, const std::string &infoPath, std::l
 
         DWORD wait = WaitForMultipleObjects(2, handles, FALSE, INFINITE);
         if (wait == WAIT_OBJECT_0){
-            getInformation(infoPath, notificationContent_list, days_list, hour_list, minute_list);
+            getInformation(infoPath, notificationContent_list, days_list, hour_list, minute_list, false);
         }
     }
 }
 
-int main(){
+void showReminders(std::list <std::string> *notificationContent_list, const std::string &notificationPath){
 
-    SetConsoleCtrlHandler((PHANDLER_ROUTINE)HandlerRoutine, TRUE );
+    auto notificationContent_i = notificationContent_list->begin();
+    std::string notificationContent;
+
+    for (int i = 0; i < notificationContent_list->size(); i++) {
+        notificationContent = *notificationContent_i;
+        ShellExecuteA(nullptr, "open", notificationPath.c_str(), notificationContent.c_str(), nullptr, 0);
+        Sleep(5200);
+
+        std::advance(notificationContent_i, 1);
+    }
+}
+
+void reset_txt(std::string infoPath, std::list <std::string> *notificationContent_list, std::list <std::string> *days_list, std::list <int> *hour_list, std::list <int> *minute_list, bool english){
+
+    clearLists(notificationContent_list, days_list, hour_list, minute_list);
+
+    std::ofstream newFile;
+    newFile.open(infoPath, std::ios::out | std::ios::trunc);
+    newFile.close();
+
+    newFile.open(infoPath);
+
+    if(english) {
+        newFile << "-----------------------------------------------------------------------------------------------------------" << std::endl;
+        newFile << "Active:         " << std::endl;
+        newFile << "Title:          " << std::endl;
+        newFile << "Message:        " << std::endl;
+        newFile << "Icon:           " << std::endl;
+        newFile << "Duration:       " << std::endl;
+        newFile << "Button:         " << std::endl;
+        newFile << "ButtonText:     " << std::endl;
+        newFile << "ButtonLaunch:   " << std::endl;
+        newFile << "Time:           " << std::endl;
+        newFile << "Days:           " << std::endl;
+        newFile << "-----------------------------------------------------------------------------------------------------------" << std::endl;
+    }
+
+    else{
+        newFile << "-----------------------------------------------------------------------------------------------------------" << std::endl;
+        newFile << "Activo:         " << std::endl;
+        newFile << "Titulo:         " << std::endl;
+        newFile << "Mensaje:        " << std::endl;
+        newFile << "Icono:          " << std::endl;
+        newFile << "Duracion:       " << std::endl;
+        newFile << "Boton:          " << std::endl;
+        newFile << "BotonTexto:     " << std::endl;
+        newFile << "BotonEjecutar:  " << std::endl;
+        newFile << "Hora:           " << std::endl;
+        newFile << "Dias:           " << std::endl;
+        newFile << "-----------------------------------------------------------------------------------------------------------" << std::endl;
+    }
+
+    newFile.close();
+}
+
+int main(int argc, char *argv[]){
 
     const LPCSTR value = "CReminders";
     std::string directoryPath, infoPath, notificationPath;
@@ -368,8 +465,7 @@ int main(){
     infoPath = directoryPath + "\\\\info.txt";
     notificationPath = directoryPath + R"(\ToastNotification\dist\toastNotification.exe)";
 
-    std::thread threadLastWritten(notifyLastWritten, directoryPath.c_str(), infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list);
-    getInformation(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list);
+    getInformation(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list, false);
 
 
     for(const auto& l: notificationContent_list)
@@ -385,26 +481,48 @@ int main(){
         std::cout << l << std::endl;
     */
 
-    while(true){
+    if(argc == 1) {
+        SetConsoleCtrlHandler((PHANDLER_ROUTINE)HandlerRoutine, TRUE );
+        std::thread threadLastWritten(notifyLastWritten, directoryPath.c_str(), infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list);
 
-        auto notificationContent_i      = notificationContent_list.begin();
-        auto hour_i                     = hour_list.begin();
-        auto minute_i                   = minute_list.begin();
+        while (true) {
 
-        for (int i = 0; i < notificationContent_list.size(); i++) {
-            notificationContent = *notificationContent_i;
-            hour = *hour_i;
-            minute = *minute_i;
+            auto notificationContent_i = notificationContent_list.begin();
+            auto hour_i = hour_list.begin();
+            auto minute_i = minute_list.begin();
 
-            if(minute == getCurrentTime("min", now, ltm) && hour == getCurrentTime("hour", now, ltm) && isToday(i, now, ltm, &days_list)){
-                ShellExecuteA(nullptr, "open", notificationPath.c_str(), notificationContent.c_str(), nullptr, 0);
-                Sleep(20000);
+            for (int i = 0; i < notificationContent_list.size(); i++) {
+                notificationContent = *notificationContent_i;
+                hour = *hour_i;
+                minute = *minute_i;
+
+                if (minute == getCurrentTime("min", now, ltm) && hour == getCurrentTime("hour", now, ltm) &&
+                    isToday(i, now, ltm, &days_list)) {
+                    ShellExecuteA(nullptr, "open", notificationPath.c_str(), notificationContent.c_str(), nullptr, 0);
+                    Sleep(20000);
+                }
+
+                std::advance(notificationContent_i, 1);
+                std::advance(hour_i, 1);
+                std::advance(minute_i, 1);
             }
-
-            std::advance(notificationContent_i, 1);
-            std::advance(hour_i, 1);
-            std::advance(minute_i, 1);
+            Sleep(50000);
         }
-        Sleep(50000);
     }
+
+    else if(argv[1] == std::string("show")){
+        getInformation(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list, true);
+        showReminders(&notificationContent_list, notificationPath);
+    }
+
+    else if(argv[1] == std::string("deactivate"))
+        deactivate(value);
+
+    else if(argv[1] == std::string("reset_en"))
+        reset_txt(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list, true);
+
+    else if(argv[1] == std::string("reset_es"))
+        reset_txt(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list, false);
+
+    return 0;
 }
