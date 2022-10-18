@@ -49,8 +49,6 @@ void addToRegistry(LPCSTR value, TCHAR *filePath){
 
 void deactivate(LPCSTR value) {
 
-    std::cout << "Deactivating..." << std::endl;
-
     HKEY newKey;
 
     RegOpenKey(HKEY_CURRENT_USER, R"(Software\Microsoft\Windows\CurrentVersion\Run)", &newKey);
@@ -434,7 +432,6 @@ void reset_txt(std::string infoPath, std::list <std::string> *notificationConten
         newFile << "Dias:           " << std::endl;
         newFile << "-----------------------------------------------------------------------------------------------------------" << std::endl;
     }
-
     newFile.close();
 }
 
