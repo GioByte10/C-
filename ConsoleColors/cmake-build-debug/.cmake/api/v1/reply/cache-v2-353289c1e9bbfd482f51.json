@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Release"
+			"value" : "Debug"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release"
+			"value" : "c:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ConsoleColors/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders"
+			"value" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ConsoleColors"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -635,7 +635,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/CReminders"
+			"value" : "C:/Program Files (x86)/ConsoleColors"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "CReminders"
+			"value" : "ConsoleColors"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1230,7 +1230,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "CReminders_BINARY_DIR",
+			"name" : "ConsoleColors_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1239,10 +1239,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release"
+			"value" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ConsoleColors/cmake-build-debug"
 		},
 		{
-			"name" : "CReminders_IS_TOP_LEVEL",
+			"name" : "ConsoleColors_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1254,7 +1254,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "CReminders_SOURCE_DIR",
+			"name" : "ConsoleColors_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders"
+			"value" : "C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/ConsoleColors"
 		}
 	],
 	"kind" : "cache",
