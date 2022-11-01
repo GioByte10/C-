@@ -1,0 +1,8 @@
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/CReminders.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/test.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/test2.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/test3.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/test4.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/commands.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/CReminders/cmake-build-release/CMakeFiles/rebuild_cache.dir

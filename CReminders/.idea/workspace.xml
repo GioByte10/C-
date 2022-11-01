@@ -19,12 +19,17 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="174f36c7-dec9-49d4-8144-b66aed332f6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/commands.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sourceFiles/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../sourceFiles/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +197,19 @@
       <workItem from="1665984858458" duration="802000" />
       <workItem from="1666047986942" duration="2391000" />
       <workItem from="1666124237600" duration="240000" />
+      <workItem from="1666219261780" duration="424000" />
+      <workItem from="1666221218540" duration="1548000" />
+      <workItem from="1666407480225" duration="167000" />
+      <workItem from="1666409265527" duration="1961000" />
+      <workItem from="1666650038013" duration="1488000" />
+      <workItem from="1666886293009" duration="856000" />
+      <workItem from="1667086535590" duration="271000" />
+      <workItem from="1667086827725" duration="1462000" />
+      <workItem from="1667170829537" duration="7846000" />
+      <workItem from="1667247318701" duration="1420000" />
+      <workItem from="1667249787556" duration="4202000" />
+      <workItem from="1667261079693" duration="595000" />
+      <workItem from="1667280162435" duration="4000" />
     </task>
     <servers />
   </component>

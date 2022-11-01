@@ -507,12 +507,12 @@ int main(int argc, char *argv[]){
         }
     }
 
-    else if(argv[1] == std::string("show")){
+    else if(argv[1] == std::string("show") || argv[1] == std::string("mostrar")){
         getInformation(infoPath, &notificationContent_list, &days_list, &hour_list, &minute_list, true);
         showReminders(&notificationContent_list, notificationPath);
     }
 
-    else if(argv[1] == std::string("deactivate"))
+    else if(argv[1] == std::string("deactivate") || argv[1] == std::string("desactivar"))
         deactivate(value);
 
     else if(argv[1] == std::string("reset_en"))
