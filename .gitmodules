@@ -1,0 +1,3 @@
+[submodule "CReminders"]
+	path = CReminders
+	url = https://github.com/GioByte10/CReminders.git
