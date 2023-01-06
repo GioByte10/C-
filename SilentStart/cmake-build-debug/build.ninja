@@ -55,6 +55,12 @@ build CMakeFiles/SilentStart.dir/main.cpp.obj: CXX_COMPILER__SilentStart_Debug C
   OBJECT_DIR = CMakeFiles\SilentStart.dir
   OBJECT_FILE_DIR = CMakeFiles\SilentStart.dir
 
+build CMakeFiles/SilentStart.dir/deactivateSilentStart.cpp.obj: CXX_COMPILER__SilentStart_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/SilentStart/deactivateSilentStart.cpp || cmake_object_order_depends_target_SilentStart
+  DEP_FILE = CMakeFiles\SilentStart.dir\deactivateSilentStart.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\SilentStart.dir
+  OBJECT_FILE_DIR = CMakeFiles\SilentStart.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SilentStart
@@ -63,7 +69,7 @@ build CMakeFiles/SilentStart.dir/main.cpp.obj: CXX_COMPILER__SilentStart_Debug C
 #############################################
 # Link the executable SilentStart.exe
 
-build SilentStart.exe: CXX_EXECUTABLE_LINKER__SilentStart_Debug CMakeFiles/SilentStart.dir/main.cpp.obj
+build SilentStart.exe: CXX_EXECUTABLE_LINKER__SilentStart_Debug CMakeFiles/SilentStart.dir/main.cpp.obj CMakeFiles/SilentStart.dir/deactivateSilentStart.cpp.obj
   FLAGS = -g
   LINK_FLAGS = -static -mwindows
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -73,6 +79,40 @@ build SilentStart.exe: CXX_EXECUTABLE_LINKER__SilentStart_Debug CMakeFiles/Silen
   TARGET_FILE = SilentStart.exe
   TARGET_IMPLIB = libSilentStart.dll.a
   TARGET_PDB = SilentStart.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target deactivateSilentStart
+
+
+#############################################
+# Order-only phony target for deactivateSilentStart
+
+build cmake_object_order_depends_target_deactivateSilentStart: phony || CMakeFiles/deactivateSilentStart.dir
+
+build CMakeFiles/deactivateSilentStart.dir/deactivateSilentStart.cpp.obj: CXX_COMPILER__deactivateSilentStart_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/SilentStart/deactivateSilentStart.cpp || cmake_object_order_depends_target_deactivateSilentStart
+  DEP_FILE = CMakeFiles\deactivateSilentStart.dir\deactivateSilentStart.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\deactivateSilentStart.dir
+  OBJECT_FILE_DIR = CMakeFiles\deactivateSilentStart.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target deactivateSilentStart
+
+
+#############################################
+# Link the executable deactivateSilentStart.exe
+
+build deactivateSilentStart.exe: CXX_EXECUTABLE_LINKER__deactivateSilentStart_Debug CMakeFiles/deactivateSilentStart.dir/deactivateSilentStart.cpp.obj
+  FLAGS = -g
+  LINK_FLAGS = -static -mwindows
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\deactivateSilentStart.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = deactivateSilentStart.exe
+  TARGET_IMPLIB = libdeactivateSilentStart.dll.a
+  TARGET_PDB = deactivateSilentStart.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test
@@ -135,6 +175,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build SilentStart: phony SilentStart.exe
 
+build deactivateSilentStart: phony deactivateSilentStart.exe
+
 build test: phony test.exe
 
 # =============================================================================
@@ -145,7 +187,7 @@ build test: phony test.exe
 #############################################
 # Folder: C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/SilentStart/cmake-build-debug
 
-build all: phony SilentStart.exe test.exe
+build all: phony SilentStart.exe deactivateSilentStart.exe test.exe
 
 # =============================================================================
 # Built-in targets

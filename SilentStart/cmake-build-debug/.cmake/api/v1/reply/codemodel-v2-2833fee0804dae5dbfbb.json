@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,14 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SilentStart::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SilentStart-Debug-efb782e76b019da02e0c.json",
+					"jsonFile" : "target-SilentStart-Debug-6c3510a21d847ca18ff4.json",
 					"name" : "SilentStart",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "deactivateSilentStart::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-deactivateSilentStart-Debug-c17e4a23d062f5c70490.json",
+					"name" : "deactivateSilentStart",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-36bdc15e03ba3f1752ef.json",
+					"jsonFile" : "target-test-Debug-368830175857c15a586b.json",
 					"name" : "test",
 					"projectIndex" : 0
 				}

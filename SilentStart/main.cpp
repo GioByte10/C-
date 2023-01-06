@@ -92,19 +92,18 @@ int main(){
         now = time(nullptr);
         localtime(&now);
 
-        if(getCurrentSeconds(now, ltm) <= 2) {
+        if(getCurrentSeconds(now, ltm) <= 4) {
             updatedSeconds = getCurrentSeconds(now, ltm);
             elapsedSeconds = updatedSeconds;
         }
 
         updatedSeconds = getCurrentSeconds(now, ltm);
 
-        std::cout << updatedSeconds <<" " << elapsedSeconds << " " << updatedSeconds - elapsedSeconds << std::endl;
-
         if (updatedSeconds - elapsedSeconds >= 4) {
             CoInitialize(nullptr);
             ChangeVolume(0);
             CoUninitialize();
+            MessageBox(nullptr, "Volume has been muted", "SilentStart", MB_ICONINFORMATION);
         }
 
         elapsedSeconds = updatedSeconds;
