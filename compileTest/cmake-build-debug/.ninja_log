@@ -1,0 +1,9 @@
+# ninja log v5
+7	111	6943529826529799	CMakeFiles/compileTest.dir/useful.cpp.obj	fb47499a71a06036
+0	1210	6943529837478614	CMakeFiles/compileTest.dir/main.cpp.obj	76f4b14fc10370a0
+1214	1449	6943529839828304	compileTest.exe	d1ae76f22c48de67
+9	3437	6943535191090729	CMakeFiles/compileTest.dir/main.cpp.obj	76f4b14fc10370a0
+16	2228	6943535997317768	CMakeFiles/compileTest.dir/useful.cpp.obj	fb47499a71a06036
+9	3162	6943536006678041	CMakeFiles/compileTest.dir/main.cpp.obj	76f4b14fc10370a0
+6	2241	6943893560274494	CMakeFiles/compileTest.dir/useful.cpp.obj	fb47499a71a06036
+2242	2956	6943893567359287	compileTest.exe	146286cfe28ba039
