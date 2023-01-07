@@ -103,7 +103,6 @@ int main(){
             CoInitialize(nullptr);
             ChangeVolume(0);
             CoUninitialize();
-            MessageBox(nullptr, "Volume has been muted", "SilentStart", MB_ICONINFORMATION);
         }
 
         elapsedSeconds = updatedSeconds;
