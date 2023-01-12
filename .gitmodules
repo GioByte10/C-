@@ -1,3 +1,6 @@
 [submodule "CReminders"]
 	path = CReminders
 	url = https://github.com/GioByte10/CReminders.git
+[submodule "AutoZoom"]
+	path = AutoZoom
+	url = https://github.com/GioByte10/AutoZoom.git
