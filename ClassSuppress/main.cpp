@@ -7,8 +7,6 @@
 #include <windows.h>
 #include <list>
 #include <fstream>
-#include <Mmdeviceapi.h>
-#include <Endpointvolume.h>
 
 bool checkAlreadyExists(LPCSTR value){
 
@@ -168,9 +166,9 @@ void getInformation(std::list<std::string> *times, std::list<std::string> *day, 
 
     for(int i = 0; getline(info, line); i++){
         if(i % 2 == 0)
-            day->push_back(line);
+            day -> push_back(line);
         else
-            times->push_back(line);
+            times ->  push_back(line);
 
     }
     info.close();
@@ -259,8 +257,10 @@ int main() {
         }
     }
 
-    if(!ifAny)
-        ShellExecute(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)", R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
+    if(!ifAny) {
+        ShellExecuteA(nullptr, "open", R"(C:\Users\super\AppData\Local\Discord\Update.exe)",R"(--processStart Discord.exe)", nullptr, SW_SHOWNORMAL);
+        ShellExecuteA(nullptr, "open", R"(C:\Users\super\AppData\Local\Programs\Opera\launcher.exe)", nullptr, nullptr, SW_SHOWNORMAL);
+    }
 
     return 0;
 }
