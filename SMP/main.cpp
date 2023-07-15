@@ -1,7 +1,7 @@
 #include <cstdio>
 #define N 4
 
-int chooseEmployee(int acceptorPreferences[][N], int acceptor, int current, int prospective){
+int chooseProposer(int acceptorPreferences[][N], int acceptor, int current, int prospective){
     for(int i = 0; i < N; i++){
         if(acceptorPreferences[acceptor][i] == current)
             return false;
@@ -58,7 +58,7 @@ int main(){
                     freeCount--;
                 }
 
-                else if(chooseEmployee(acceptorPreferences, proposeTo, matches[proposeTo], p)) {
+                else if(chooseProposer(acceptorPreferences, proposeTo, matches[proposeTo], p)) {
                     matched[matches[proposeTo] - 1] = false;
                     matches[proposeTo] = p + 1;
                     matched[p] = true;
