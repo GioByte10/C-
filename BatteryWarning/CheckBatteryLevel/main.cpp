@@ -23,7 +23,6 @@ void addToStartUp(LPCSTR value, TCHAR *filePath){
     HKEY newKey;
 
     RegOpenKey(HKEY_CURRENT_USER, R"(Software\Microsoft\Windows\CurrentVersion\Run)", &newKey);
-    std::cout << filePath << ' ' << sizeof(filePath) <<  std::endl;
     LONG result = RegSetValueEx(newKey, value, 0, REG_SZ, (LPBYTE)filePath, lstrlen(filePath));
     RegCloseKey(newKey);
 
@@ -35,7 +34,6 @@ void addToStartUp(LPCSTR value, TCHAR *filePath){
 
 int main() {
 
-    ShowWindow(GetConsoleWindow(), SW_HIDE);
     SYSTEM_POWER_STATUS status;                                 // note not LPSYSTEM_POWER_STATUS
     LPCSTR value = "BatteryWarning";
 

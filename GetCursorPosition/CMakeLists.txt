@@ -4,3 +4,4 @@ project(GetCursorPosition)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(GetCursorPosition main.cpp)
+add_executable(test test.cpp)

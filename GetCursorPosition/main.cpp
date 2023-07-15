@@ -27,12 +27,15 @@ int main()
 {
     int X, Y, pass;
     POINT cursor;
+    int d = 20;
 
-    cursor = getMouseCursorPosition();
+    Sleep(2000);
 
-    Y = cursor.y;
-    X = cursor.x;
-    printf(" X = %i; ", X);
-    printf(" Y = %i", Y);
-
+    while(GetKeyState(VK_SHIFT) >= 0){
+        for (short i = 0; i < 380 / d; i++) {
+            SetCursorPos(i * d + 465, 400);
+            Sleep(5);
+        }
+    }
+    //450 860
 }

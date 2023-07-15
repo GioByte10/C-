@@ -1,12 +1,8 @@
 # ninja log v5
-11	5487	6946892323453024	CMakeFiles/SilentStart.dir/main.cpp.obj	5ec736b78673463e
-7	2264	6946756239281249	CMakeFiles/deactivateSilentStart.dir/deactivateSilentStart.cpp.obj	d4a0526c7a260803
-3	1617	6946085596127430	CMakeFiles/test.dir/test.cpp.obj	1ccff3f520f6983f
-125	1090	6946893934121044	SilentStart.exe	9fdd598c681a00ba
-1617	1698	6946085596923214	test.exe	1fefe540610341c5
-5	170	6946756316519511	deactivateSilentStart.exe	b1dc48f967188cae
-1	410	6946894104981025	build.ninja	2fece0369539f4fb
-8	123	6946893924563906	CMakeFiles/SilentStart.dir/deactivateSilentStart.cpp.obj	dab935b16af51200
+9	4044	7093595008280066	CMakeFiles/SilentStart.dir/main.cpp.obj	7814016ece2d8711
 9	2431	6946894188522450	CMakeFiles/deactivateSilentStart.dir/deactivateSilentStart.cpp.obj	d4a0526c7a260803
+3	1617	6946085596127430	CMakeFiles/test.dir/test.cpp.obj	1ccff3f520f6983f
+4045	5239	7093595020103473	SilentStart.exe	6ef71d62277bff32
+1617	1698	6946085596923214	test.exe	1fefe540610341c5
 2432	2607	6946894190247116	deactivateSilentStart.exe	b1dc48f967188cae
-8	926	6946894258759658	SilentStart.exe	6d52a5edbd25f213
+3	352	7108797623765769	build.ninja	8b8353cbc3e8db75

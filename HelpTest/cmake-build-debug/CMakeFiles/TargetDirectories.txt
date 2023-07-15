@@ -1,0 +1,3 @@
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HelpTest/cmake-build-debug/CMakeFiles/HelpTest.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HelpTest/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/HelpTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir

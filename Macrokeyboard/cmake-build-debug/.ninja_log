@@ -1,0 +1,18 @@
+# ninja log v5
+7	2380	7023335522400318	CMakeFiles/Macrokeyboard.dir/Serial.cpp.obj	5590c6183eb40d92
+12	3876	7023333230515742	CMakeFiles/Macrokeyboard.dir/main.cpp.obj	5cbcf97d068e4389
+2381	2599	7023335524502826	Macrokeyboard.exe	f744ec29ef11663
+10	2736	7023335858770774	CMakeFiles/Macrokeyboard.dir/Serial.cpp.obj	5590c6183eb40d92
+2737	3001	7023335861334576	Macrokeyboard.exe	f744ec29ef11663
+7	3342	7023341018682136	CMakeFiles/Macrokeyboard.dir/main.cpp.obj	5cbcf97d068e4389
+3343	3570	7023341020862455	Macrokeyboard.exe	f744ec29ef11663
+7	3262	7023342188237047	CMakeFiles/Macrokeyboard.dir/main.cpp.obj	5cbcf97d068e4389
+3263	3482	7023342190358669	Macrokeyboard.exe	f744ec29ef11663
+10	4072	7023343650012270	CMakeFiles/Macrokeyboard.dir/main.cpp.obj	5cbcf97d068e4389
+4073	4274	7023343651946155	Macrokeyboard.exe	f744ec29ef11663
+7	3774	7023346981464574	CMakeFiles/Macrokeyboard.dir/main.cpp.obj	5cbcf97d068e4389
+3775	3977	7023346983429852	Macrokeyboard.exe	f744ec29ef11663
+7	3423	7023349044694642	CMakeFiles/Macrokeyboard.dir/main.cpp.obj	5cbcf97d068e4389
+3424	3645	7023349046817309	Macrokeyboard.exe	f744ec29ef11663
+8	3066	7023349891495362	CMakeFiles/Macrokeyboard.dir/main.cpp.obj	5cbcf97d068e4389
+3067	3298	7023349893743841	Macrokeyboard.exe	f744ec29ef11663

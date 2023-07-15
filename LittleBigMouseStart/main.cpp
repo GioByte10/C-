@@ -85,9 +85,7 @@ int main() {
     WlanCloseHandle(handle, nullptr);
 
     if(r)
-        //system("SCHTASKS.EXE /RUN /TN \\MyApps\\LittleBigMouse");
-        ShellExecuteA(nullptr, "runas", R"(C:\Windows\System32\cmd.exe)", R"(/k cd "C:\Program Files\LittleBigMouse" && LittleBigMouse_Daemon.exe --start & exit())", nullptr, SW_HIDE);
-
+        system(R"(SCHTASKS.EXE /RUN /TN \MyApps\LittleBigMouse)");
 
     return 0;
 }

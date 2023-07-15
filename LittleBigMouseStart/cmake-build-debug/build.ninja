@@ -73,6 +73,39 @@ build LittleBigMouseStart.exe: CXX_EXECUTABLE_LINKER__LittleBigMouseStart_Debug 
   TARGET_IMPLIB = libLittleBigMouseStart.dll.a
   TARGET_PDB = LittleBigMouseStart.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target start
+
+
+#############################################
+# Order-only phony target for start
+
+build cmake_object_order_depends_target_start: phony || CMakeFiles/start.dir
+
+build CMakeFiles/start.dir/start.cpp.obj: CXX_COMPILER__start_Debug C$:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/LittleBigMouseStart/start.cpp || cmake_object_order_depends_target_start
+  DEP_FILE = CMakeFiles\start.dir\start.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\start.dir
+  OBJECT_FILE_DIR = CMakeFiles\start.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target start
+
+
+#############################################
+# Link the executable start.exe
+
+build start.exe: CXX_EXECUTABLE_LINKER__start_Debug CMakeFiles/start.dir/start.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\start.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = start.exe
+  TARGET_IMPLIB = libstart.dll.a
+  TARGET_PDB = start.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build LittleBigMouseStart: phony LittleBigMouseStart.exe
 
+build start: phony start.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build LittleBigMouseStart: phony LittleBigMouseStart.exe
 #############################################
 # Folder: C:/Users/super/Desktop/Giovanni/Programacion/Lenguajes/C++/LittleBigMouseStart/cmake-build-debug
 
-build all: phony LittleBigMouseStart.exe
+build all: phony LittleBigMouseStart.exe start.exe
 
 # =============================================================================
 # Built-in targets
