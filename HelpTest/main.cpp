@@ -1,13 +1,10 @@
+#include <cstdio>
 #include <iostream>
+#include "Test.h"
 
-int main() {
 
-    int c, j, i = 100;
+int main(){
 
-    std::cout << c << std::endl;
-    std::cout << j << std::endl;
-    std::cout << i << std::endl;
-
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << TIMEOUT_MS;
     return 0;
 }

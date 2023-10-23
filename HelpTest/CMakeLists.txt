@@ -3,4 +3,7 @@ project(HelpTest)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(HelpTest main.cpp)
+add_executable(HelpTest main.cpp
+        Test.cpp)
+
+add_executable(test test.c)

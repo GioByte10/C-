@@ -1,24 +1,14 @@
-#include <iostream>
+///////////////
+//PID.h
+///////////////
+#include <cstdio>
 
-class Pikachu {
-public:
-    Pikachu() {
-        std::cout << "Pikachu ceased not existing" << std::endl;
-    }
-   void goShower() {
-        std::cout << "Pikachu is going to shower" << std::endl;
-    }
-    void goToSleep() {
-        std::cout << "Pikachu is going to sleep" << std::endl;
-    }
-};
 
-int main() {
+bool debug = true;
 
-    Pikachu pikachu;
+int main(){
 
-    pikachu.goShower();
-    pikachu.goToSleep();
+    if(debug)
+        printf("hey");
 
-    return 0;
 }
