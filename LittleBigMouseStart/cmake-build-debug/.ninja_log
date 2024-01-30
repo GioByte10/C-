@@ -1,8 +1,7 @@
 # ninja log v5
-6	3453	7012564884177211	CMakeFiles/LittleBigMouseStart.dir/main.cpp.obj	29b7cd6ce15a7126
-5	409	7022493993735372	build.ninja	90078c47b0c319ca
-3454	3671	7012564886271446	LittleBigMouseStart.exe	f6044c698dbf1b69
-1	3486	7022516890709193	CMakeFiles/start.dir/start.cpp.obj	6b9e35524bc06794
-3487	3958	7022516895383108	start.exe	b12c5b9e1387bda4
-5	3133	7022661893417031	CMakeFiles/LittleBigMouseStart.dir/main.cpp.obj	29b7cd6ce15a7126
-3134	3372	7022661895784575	LittleBigMouseStart.exe	f6044c698dbf1b69
+2202	2330	7265312502128976	start.exe	4ca22216daf72c93
+2	2477	7265309671595102	CMakeFiles/LittleBigMouseStart.dir/main.cpp.obj	391fab34e99617af
+6	281	7265313335394137	build.ninja	55b35af141db72c4
+5	554	7265313194534282	LittleBigMouseStart.exe	7a0f11e2a5127196
+8	2201	7265312500881781	CMakeFiles/start.dir/start.cpp.obj	9d9430307e15effd
+9	566	7265313367218411	LittleBigMouseStart.exe	45b2eb790a86341a
